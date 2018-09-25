@@ -1,0 +1,748 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e5e5e5"
+    android:clickable="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include layout="@layout/header" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:id="@+id/ll_upgrade_to_premium"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:background="#d1d1d1"
+                android:orientation="vertical">
+
+
+
+
+                <LinearLayout
+                    android:id="@+id/rl_oneyear"
+                    android:layout_width="match_parent"
+                    android:layout_height="85dp"
+                    android:background="@color/whiteprofile"
+                    android:orientation="horizontal"
+                    android:visibility="visible">
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.2">
+
+                        <RelativeLayout
+                            android:id="@+id/img_oneyear"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true">
+
+
+                            <TextView
+                                android:id="@+id/txt_month_year"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:gravity="center_horizontal"
+                                android:text="12"
+                                android:textColor="#000000"
+                                android:textSize="48sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginBottom="2dp"
+                                android:layout_marginLeft="6dp"
+                                android:layout_marginRight="2dp"
+                                android:layout_marginTop="2dp"
+                                android:layout_toRightOf="@+id/txt_month_year"
+                                android:gravity="left"
+                                android:text="@string/monthplan"
+
+                                android:textColor="#000000"
+                                android:textSize="15sp" />
+
+
+                        </RelativeLayout>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+
+                        <LinearLayout
+                            android:id="@+id/ll_proxce_1year"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+
+
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="2dp"
+                                android:layout_marginLeft="2dp"
+                                android:layout_marginRight="2dp"
+                                android:layout_marginTop="2dp"
+                                android:gravity="center_horizontal"
+                                android:text="$9.95/Month"
+                                android:textColor="#000000"
+                                android:textSize="14sp" />
+
+                            <!--<TextView-->
+                                <!--android:layout_width="match_parent"-->
+                                <!--android:layout_height="wrap_content"-->
+                                <!--android:layout_marginBottom="2dp"-->
+                                <!--android:layout_marginLeft="2dp"-->
+                                <!--android:layout_marginRight="2dp"-->
+
+                                <!--android:gravity="center_horizontal"-->
+                                <!--android:text="Save $60.00"-->
+                                <!--android:textColor="@color/buttoncolor"-->
+                                <!--android:textSize="14sp" />-->
+
+                            <!--<TextView-->
+                                <!--android:layout_width="match_parent"-->
+                                <!--android:layout_height="wrap_content"-->
+                                <!--android:layout_marginBottom="2dp"-->
+                                <!--android:layout_marginLeft="2dp"-->
+                                <!--android:layout_marginRight="2dp"-->
+
+                                <!--android:gravity="center_horizontal"-->
+                                <!--android:text="Total $119.40"-->
+                                <!--android:textColor="#000000"-->
+                                <!--android:textSize="14sp" />-->
+
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                    <!--<RelativeLayout-->
+                        <!--android:layout_width="0dp"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:layout_weight="1">-->
+
+
+                        <!--<RelativeLayout-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_centerInParent="true"-->
+                            <!--android:layout_weight="1">-->
+
+
+                            <!--<RelativeLayout-->
+                                <!--android:layout_width="wrap_content"-->
+                                <!--android:layout_height="44dp"-->
+                                <!--android:paddingRight="8dp"-->
+                                <!--android:paddingLeft="8dp"-->
+                                <!--android:layout_centerInParent="true"-->
+                                <!--android:background="@drawable/red_bg_with_rounded_corner"-->
+                                <!--android:gravity="center">-->
+
+                                <!--<TextView-->
+                                    <!--android:layout_width="wrap_content"-->
+                                    <!--android:layout_height="wrap_content"-->
+                                    <!--android:layout_marginBottom="5dp"-->
+                                    <!--android:layout_marginLeft="7dp"-->
+                                    <!--android:layout_marginRight="7dp"-->
+                                    <!--android:layout_marginTop="5dp"-->
+                                    <!--android:text="@string/select"-->
+                                    <!--android:textAllCaps="false"-->
+                                    <!--android:textColor="#ffffff"-->
+                                    <!--android:textSize="17sp" />-->
+                            <!--</RelativeLayout>-->
+                        <!--</RelativeLayout>-->
+                    <!--</RelativeLayout>-->
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/rl_sixmonth"
+                    android:layout_width="match_parent"
+                    android:layout_height="85dp"
+                    android:background="@color/whiteprofile"
+                    android:orientation="horizontal"
+                    android:visibility="visible">
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.2">
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true">
+
+
+                            <TextView
+                                android:id="@+id/txt_6month_year"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:gravity="center_horizontal"
+                                android:text="6"
+                                android:textColor="#000000"
+                                android:textSize="48sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginBottom="2dp"
+                                android:layout_marginLeft="6dp"
+                                android:layout_marginRight="2dp"
+                                android:layout_marginTop="2dp"
+                                android:layout_toRightOf="@+id/txt_6month_year"
+                                android:gravity="left"
+                                android:text="@string/monthplan"
+
+                                android:textColor="#000000"
+                                android:textSize="15sp" />
+
+
+                        </RelativeLayout>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+
+                        <LinearLayout
+                            android:id="@+id/ll_6month"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+
+
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="2dp"
+                                android:layout_marginLeft="2dp"
+                                android:layout_marginRight="2dp"
+                                android:layout_marginTop="8dp"
+                                android:gravity="center_horizontal"
+                                android:text="$11.95/Month"
+                                android:textColor="#000000"
+                                android:textSize="14sp" />
+
+                            <!--<TextView-->
+                                <!--android:layout_width="match_parent"-->
+                                <!--android:layout_height="wrap_content"-->
+                                <!--android:layout_marginBottom="2dp"-->
+                                <!--android:layout_marginLeft="2dp"-->
+                                <!--android:layout_marginRight="2dp"-->
+                                <!--android:layout_marginTop="2dp"-->
+                                <!--android:gravity="center_horizontal"-->
+                                <!--android:text="Save $18.00"-->
+                                <!--android:textColor="@color/buttoncolor"-->
+                                <!--android:textSize="14sp" />-->
+
+                            <!--<TextView-->
+                                <!--android:layout_width="match_parent"-->
+                                <!--android:layout_height="wrap_content"-->
+                                <!--android:layout_marginBottom="2dp"-->
+                                <!--android:layout_marginLeft="2dp"-->
+                                <!--android:layout_marginRight="2dp"-->
+                                <!--android:layout_marginTop="2dp"-->
+                                <!--android:gravity="center_horizontal"-->
+                                <!--android:text="Total $71.70"-->
+                                <!--android:textColor="#000000"-->
+                                <!--android:textSize="14sp" />-->
+
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                    <!--<RelativeLayout-->
+                        <!--android:layout_width="0dp"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:layout_weight="1">-->
+
+
+                        <!--<RelativeLayout-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_centerInParent="true"-->
+                            <!--android:layout_weight="1">-->
+
+
+                            <!--<RelativeLayout-->
+                                <!--android:layout_width="wrap_content"-->
+                                <!--android:layout_height="44dp"-->
+                                <!--android:paddingRight="8dp"-->
+                                <!--android:paddingLeft="8dp"-->
+                                <!--android:layout_centerInParent="true"-->
+                                <!--android:background="@drawable/red_bg_with_rounded_corner"-->
+                                <!--android:gravity="center">-->
+
+                                <!--<TextView-->
+                                    <!--android:layout_width="wrap_content"-->
+                                    <!--android:layout_height="wrap_content"-->
+                                    <!--android:layout_marginBottom="5dp"-->
+                                    <!--android:layout_marginLeft="7dp"-->
+                                    <!--android:layout_marginRight="7dp"-->
+                                    <!--android:layout_marginTop="5dp"-->
+                                    <!--android:text="@string/select"-->
+                                    <!--android:textAllCaps="false"-->
+                                    <!--android:textColor="#ffffff"-->
+                                    <!--android:textSize="17sp" />-->
+                            <!--</RelativeLayout>-->
+                        <!--</RelativeLayout>-->
+                    <!--</RelativeLayout>-->
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/rl_threemonth"
+                    android:layout_width="match_parent"
+                    android:layout_height="85dp"
+                    android:background="@color/whiteprofile"
+                    android:orientation="horizontal"
+                    android:visibility="visible">
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.2">
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true">
+
+
+                            <TextView
+                                android:id="@+id/txt_3month_year"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:gravity="center_horizontal"
+                                android:text="3"
+                                android:textColor="#000000"
+                                android:textSize="48sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginBottom="2dp"
+                                android:layout_marginLeft="6dp"
+                                android:layout_marginRight="2dp"
+                                android:layout_marginTop="2dp"
+                                android:layout_toRightOf="@+id/txt_3month_year"
+                                android:gravity="left"
+                                android:text="@string/monthplan"
+
+                                android:textColor="#000000"
+                                android:textSize="15sp" />
+
+
+                        </RelativeLayout>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+
+                        <LinearLayout
+                            android:id="@+id/ll_3month"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+
+
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="2dp"
+                                android:layout_marginLeft="2dp"
+                                android:layout_marginRight="2dp"
+                                android:layout_marginTop="8dp"
+                                android:gravity="center_horizontal"
+                                android:text="$14.95/Month"
+                                android:textColor="#000000"
+                                android:textSize="14sp" />
+
+                            <!--<TextView-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_marginBottom="2dp"-->
+                            <!--android:layout_marginRight="2dp"-->
+                            <!--android:layout_marginLeft="2dp"-->
+                            <!--android:layout_marginTop="2dp"-->
+                            <!--android:gravity="center_horizontal"-->
+                            <!--android:textColor="@color/buttoncolor"-->
+                            <!--android:textSize="14sp" />-->
+
+                            <!--<TextView-->
+                                <!--android:layout_width="match_parent"-->
+                                <!--android:layout_height="wrap_content"-->
+                                <!--android:layout_marginBottom="2dp"-->
+                                <!--android:layout_marginLeft="2dp"-->
+                                <!--android:layout_marginRight="2dp"-->
+                                <!--android:layout_marginTop="2dp"-->
+                                <!--android:gravity="center_horizontal"-->
+                                <!--android:text="Total $44.85"-->
+                                <!--android:textColor="#000000"-->
+                                <!--android:textSize="14sp" />-->
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                    <!--<RelativeLayout-->
+                        <!--android:layout_width="0dp"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:layout_weight="1">-->
+
+
+                        <!--<RelativeLayout-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_centerInParent="true"-->
+                            <!--android:layout_weight="1">-->
+
+
+                            <!--<RelativeLayout-->
+                                <!--android:layout_width="wrap_content"-->
+                                <!--android:layout_height="44dp"-->
+                                <!--android:paddingRight="8dp"-->
+                                <!--android:paddingLeft="8dp"-->
+                                <!--android:layout_centerInParent="true"-->
+                                <!--android:background="@drawable/red_bg_with_rounded_corner"-->
+                                <!--android:gravity="center">-->
+
+                                <!--<TextView-->
+                                    <!--android:layout_width="wrap_content"-->
+                                    <!--android:layout_height="wrap_content"-->
+                                    <!--android:layout_marginBottom="5dp"-->
+                                    <!--android:layout_marginLeft="7dp"-->
+                                    <!--android:layout_marginRight="7dp"-->
+                                    <!--android:layout_marginTop="5dp"-->
+                                    <!--android:text="@string/select"-->
+                                    <!--android:textAllCaps="false"-->
+                                    <!--android:textColor="#ffffff"-->
+                                    <!--android:textSize="17sp" />-->
+                            <!--</RelativeLayout>-->
+                        <!--</RelativeLayout>-->
+                    <!--</RelativeLayout>-->
+
+                </LinearLayout>
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/ll_upgrade_to_premium"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="30dp"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:id="@+id/rl_username"
+                        android:layout_width="fill_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginRight="25dp"
+
+                        android:background="@drawable/white_bg_with_rounded_corner">
+
+
+                        <ImageView
+                            android:id="@+id/img_email"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="4dp"
+                            android:layout_marginRight="4dp"
+                            android:src="@drawable/email_icon" />
+
+
+                        <EditText
+                            android:id="@+id/edt_email"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_centerVertical="true"
+                            android:layout_toRightOf="@+id/img_email"
+                            android:background="@null"
+                            android:hint="@string/Emailaddress"
+                            android:imeOptions="actionNext"
+                            android:inputType="textEmailAddress"
+                            android:padding="3dp"
+                            android:textColor="#000000"
+                            android:textSize="17sp" />
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rl_name"
+                        android:layout_width="fill_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginRight="25dp"
+                        android:layout_marginTop="10dp"
+
+                        android:background="@drawable/white_bg_with_rounded_corner">
+
+
+                        <ImageView
+                            android:id="@+id/img_name"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="4dp"
+                            android:layout_marginRight="4dp"
+                            android:src="@drawable/user_icon" />
+
+
+                        <EditText
+                            android:id="@+id/edt_name"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_centerVertical="true"
+                            android:layout_toRightOf="@+id/img_name"
+                            android:background="@null"
+                            android:hint="@string/Nameoncard"
+                            android:imeOptions="actionNext"
+                            android:inputType="text"
+                            android:padding="3dp"
+                            android:textColor="#000000"
+                            android:textSize="17sp" />
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rl_cardnumber"
+                        android:layout_width="fill_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginRight="25dp"
+                        android:layout_marginTop="10dp"
+
+                        android:background="@drawable/white_bg_with_rounded_corner">
+
+
+                        <ImageView
+                            android:id="@+id/img_cardnumber"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="4dp"
+                            android:layout_marginRight="4dp"
+                            android:src="@drawable/creditcard_icon" />
+
+
+                        <EditText
+                            android:id="@+id/edt_cardnumber"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_centerVertical="true"
+                            android:layout_toRightOf="@+id/img_cardnumber"
+                            android:background="@null"
+                            android:hint="@string/Cardnumber"
+                            android:imeOptions="actionNext"
+                            android:inputType="number"
+                            android:maxLength="16"
+                            android:padding="3dp"
+                            android:textColor="#000000"
+                            android:textSize="17sp" />
+
+
+                    </RelativeLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+
+                        <RelativeLayout
+                            android:id="@+id/rl_date"
+                            android:layout_width="0dp"
+                            android:layout_height="48dp"
+                            android:layout_marginLeft="25dp"
+                            android:layout_marginTop="10dp"
+
+                            android:layout_weight="1"
+
+                            android:background="@drawable/white_bg_with_rounded_corner">
+
+
+                            <ImageView
+                                android:id="@+id/img_date"
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:layout_alignParentLeft="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="4dp"
+                                android:layout_marginRight="4dp"
+                                android:src="@drawable/event_icon" />
+
+
+                            <TextView
+                                android:id="@+id/edt_date"
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_centerVertical="true"
+                                android:layout_toRightOf="@+id/img_date"
+                                android:background="@null"
+                                android:gravity="center_vertical"
+                                android:hint="@string/mmyy"
+                                android:imeOptions="actionNext"
+                                android:inputType="text"
+                                android:padding="3dp"
+                                android:textColor="#000000"
+                                android:textSize="17sp" />
+
+
+                        </RelativeLayout>
+
+
+                        <RelativeLayout
+                            android:id="@+id/rl_cvc"
+                            android:layout_width="0dp"
+                            android:layout_height="48dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="25dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_weight="1"
+
+                            android:background="@drawable/white_bg_with_rounded_corner">
+
+
+                            <ImageView
+                                android:id="@+id/img_cvc"
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:layout_alignParentLeft="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="4dp"
+                                android:layout_marginRight="4dp"
+                                android:src="@drawable/lock_icon" />
+
+
+                            <EditText
+                                android:id="@+id/edt_cvc"
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_centerVertical="true"
+                                android:layout_toRightOf="@+id/img_cvc"
+                                android:background="@null"
+                                android:hint="@string/CVC"
+                                android:imeOptions="actionDone"
+                                android:inputType="number"
+                                android:padding="3dp"
+                                android:textColor="#000000"
+                                android:textSize="17sp" />
+
+
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+
+
+                    <RelativeLayout
+                        android:id="@+id/rl_submitpayment_btn"
+                        android:layout_width="fill_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginLeft="45dp"
+                        android:layout_marginRight="45dp"
+                        android:layout_marginTop="25dp"
+                        android:background="@drawable/red_bg_with_rounded_corner">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:layout_centerInParent="true"
+                            android:text="@string/Continue"
+                            android:textColor="#ffffff"
+                            android:textSize="17sp" />
+                    </RelativeLayout>
+
+                    `
+
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="6dp"
+                android:layout_marginRight="6dp"
+                android:background="@drawable/stripebg"
+                android:padding="3dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_centerInParent="true"
+                    android:text="@string/powered"
+                    android:textColor="#ffffff"
+                    android:textSize="13sp" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+</LinearLayout>

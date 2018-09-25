@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.SigninSignup.ChattingActivity">
+
+   <LinearLayout
+       android:id="@+id/ll_toolbar"
+       android:background="@color/purp"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+       <include layout="@layout/toolbar_main"></include>
+   </LinearLayout>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rvChat"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/ll_toolbar"
+        android:layout_above="@+id/editTextLayout"
+        android:scrollbars="vertical"
+        android:background="@drawable/whatsapp_chat_bg"/>
+
+    <LinearLayout
+        android:id="@+id/editTextLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true">
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="45dp"
+            android:id="@+id/btnSmiley"
+            android:background="#ffffff"
+            android:padding="2dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_smiley" />
+
+        <EditText
+            android:id="@+id/etText"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_weight="5"
+            android:textColor="#414040"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/edittext_boder"
+            android:textColorHint="#aeafaf" />
+
+        <ImageButton
+            android:id="@+id/btSent"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:background="@color/purp"
+            android:scaleType="centerInside"
+            android:src="@drawable/btn_send" />
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>

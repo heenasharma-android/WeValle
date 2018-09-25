@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/whiteprofile"
+    tools:context="com.OldScreens.EditProfile">
+
+
+    <LinearLayout
+        android:id="@+id/ll_header"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical">
+
+        <include layout="@layout/edit_header_profile" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:padding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:background="@drawable/edit_back"
+                android:padding="@dimen/dimen_10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/purp"
+                    android:text="Profession"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:textSize="15sp"
+                    android:id="@+id/tv_profession"
+                    android:layout_alignParentRight="true"
+                    android:textColor="@color/unanswercolor"
+                    android:text="Profession"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:background="@drawable/edit_back"
+                android:layout_marginTop="5dp"
+                android:padding="@dimen/dimen_10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/purp"
+                    android:text="Are you single?"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:textSize="15sp"
+                    android:id="@+id/tv_single"
+                    android:layout_alignParentRight="true"
+                    android:textColor="@color/answercolor"
+                    android:text="Yes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:background="@drawable/edit_back"
+                android:layout_marginTop="5dp"
+                android:padding="@dimen/dimen_10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:textSize="15sp"
+                    android:id="@+id/tv_language1"
+                    android:textStyle="bold"
+                    android:textColor="@color/purp"
+                    android:text="Which languages do you speak?"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <EditText
+                    android:textSize="15sp"
+                    android:background="@null"
+                    android:layout_marginTop="5dp"
+                    android:layout_below="@+id/tv_language1"
+                    android:id="@+id/tv_language"
+                    android:textColor="@color/answercolor"
+                    android:text="English, Spanish, Franch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:background="@drawable/edit_back"
+                android:layout_marginTop="5dp"
+                android:padding="@dimen/dimen_10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:textSize="15sp"
+                    android:id="@+id/tv_fun1"
+                    android:textStyle="bold"
+                    android:textColor="@color/purp"
+                    android:text="What do you do for fun?"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <EditText
+                    android:textSize="15sp"
+                    android:background="@null"
+                    android:layout_marginTop="5dp"
+                    android:layout_below="@+id/tv_fun1"
+                    android:id="@+id/tv_fun"
+                    android:textColor="@color/answercolor"
+                    android:text="You can have all the money in the world,but if you do not have someone to enjoy it with,its meaningless!"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+</LinearLayout>

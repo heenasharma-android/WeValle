@@ -1,0 +1,38 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="?android:windowBackground"
+    android:orientation="vertical">
+
+    <!--<LinearLayout-->
+        <!--android:id="@+id/container_toolbar_profile"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="48dp">-->
+
+        <!--<include-->
+            <!--android:id="@+id/toolbar"-->
+            <!--layout="@layout/header" />-->
+    <!--</LinearLayout>-->
+    <!--<ImageView-->
+    <!--android:id="@+id/iv_add_image"-->
+    <!--android:layout_width="100dp"-->
+    <!--android:layout_height="100dp"-->
+    <!--android:background="@drawable/tv_back_border" />-->
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/gv_userimages"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="4dp"
+        android:fadingEdge="none"
+        android:horizontalSpacing="4dp"
+        android:numColumns="auto_fit"
+        android:columnWidth="95dp"
+        android:scrollbars="none"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="6dp">
+
+
+    </android.support.v7.widget.RecyclerView>
+</LinearLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_no_messages"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:visibility="gone"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:layout_margin="10dp"
+            android:text="You have no messages at this time. Start a chat with someone"
+            android:textColor="@color/answercolor"
+            android:textSize="17sp"
+            android:textStyle="normal" />
+
+    </RelativeLayout>
+
+
+    <ListView
+        android:id="@+id/lv_peopleviewedme"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp">
+
+    </ListView>
+
+
+</LinearLayout>

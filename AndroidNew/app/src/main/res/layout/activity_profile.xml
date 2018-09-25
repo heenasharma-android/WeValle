@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.SigninSignup.ProfileActivity">
+<LinearLayout
+    android:background="@color/purp"
+    android:id="@+id/ll_toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <include layout="@layout/toolbar_main"></include>
+</LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_toolbar">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/list2"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_below="@+id/Tfav"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_height="200dp"
+                android:scrollbars="none"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="User"
+                android:id="@+id/Puser"
+                android:layout_below="@+id/list2"
+                android:layout_marginLeft="40dp"
+                android:textStyle="bold"
+                android:textSize="18sp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Age"
+                android:id="@+id/Page"
+                android:layout_below="@+id/list2"
+                android:layout_toRightOf="@+id/Puser"
+                android:textStyle="bold"
+                android:layout_marginLeft="2dp"
+                android:textSize="18sp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Location"
+                android:id="@+id/loc"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/Puser"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Location"
+                android:id="@+id/Ploc"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="5dp"
+                android:textSize="18sp"
+                android:layout_below="@+id/loc"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Heritage"
+                android:id="@+id/heri"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/Ploc"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Heritage"
+                android:id="@+id/Pher"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="5dp"
+                android:textSize="18sp"
+                android:layout_below="@+id/heri"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Profession"
+                android:id="@+id/Profess"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/Pher"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Profession"
+                android:id="@+id/Pprofession"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="5dp"
+                android:textSize="18sp"
+                android:layout_below="@+id/Profess"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Languages"
+                android:id="@+id/Language"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/Pprofession"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lang"
+                android:id="@+id/Plang"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="5dp"
+                android:textSize="18sp"
+                android:layout_below="@+id/Language"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="About me"
+                android:id="@+id/About"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/Plang"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="About"
+                android:id="@+id/Pabout"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="5dp"
+                android:textSize="18sp"
+                android:layout_below="@+id/About"/>
+
+        </RelativeLayout></ScrollView>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:onClick="connect"
+        android:background="@color/purp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/dimen_20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:src="@android:drawable/ic_dialog_email"
+        android:layout_alignParentRight="true" />
+
+</RelativeLayout>

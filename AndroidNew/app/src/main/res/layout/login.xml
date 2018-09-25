@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/ll_header"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:orientation="vertical">
+
+            <include layout="@layout/header_profile_page" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/ll_logo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ll_header"
+            android:orientation="vertical">
+
+
+            <com.editprofile.FontText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                custom:typefaceAsset="fonts/HarabaraFont.otf"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_marginBottom="10dp"
+                android:textColor="@color/grey_dark"
+                android:layout_marginTop="10dp"
+                android:textSize="44sp"
+                android:text="@string/WeValle" />
+
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/ll_logo"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/rl_username"
+                    android:layout_width="fill_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginLeft="25dp"
+
+                    android:layout_marginRight="25dp">
+
+                    <EditText
+                        android:id="@+id/edt_emailaddress"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:hint="@string/Emailaddress"
+                        android:imeOptions="actionNext"
+                        android:inputType="textEmailAddress"
+                        android:textColor="#000000"
+                        android:textSize="17sp" />
+
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/rl_password"
+                    android:layout_width="fill_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginTop="10dp">
+
+                    <EditText
+                        android:id="@+id/edt_password"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:hint="@string/password"
+                        android:imeOptions="actionDone"
+                        android:inputType="textPassword"
+                        android:fontFamily="sans-serif"
+                        android:textColor="#000000"
+                        android:textSize="17sp" />
+
+                    <ImageView
+                        android:id="@+id/img_forgotpassword"
+                        android:layout_width="23dp"
+                        android:layout_height="23dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginRight="5dp"
+                        android:paddingBottom="2dp"
+                        android:src="@drawable/forgotpassbtn" />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_login_btn"
+                    android:layout_width="fill_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginLeft="45dp"
+                    android:layout_marginRight="45dp"
+                    android:layout_marginTop="25dp"
+                    android:background="@drawable/red_bg_with_rounded_corner">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:layout_centerInParent="true"
+                        android:text="@string/Login"
+                        android:textColor="#ffffff"
+                        android:textSize="17sp" />
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="45dp"
+                    android:layout_marginRight="45dp"
+                    android:layout_marginTop="25dp">
+
+                    <!--<ImageView-->
+                    <!--android:id="@+id/img_faq"-->
+                    <!--android:layout_width="35dp"-->
+                    <!--android:layout_height="35dp"-->
+
+                    <!--android:layout_centerInParent="true"-->
+                    <!--android:src="@drawable/faq_login_icon" />-->
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_registerbtn"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="25dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_centerInParent="true"
+                android:text="No account? Click to Register!"
+                android:textColor="#000000"
+                android:textSize="17sp" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+</RelativeLayout>

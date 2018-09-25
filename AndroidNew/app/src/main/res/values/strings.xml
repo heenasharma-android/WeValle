@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+
+    <string name="app_name">WeValle</string>
+    <string name="WeValle">WeValle</string>
+    <string name="monthplan">Month\nplan</string>
+    <string name="Login">LOG IN</string>
+    <string name="Register">REGISTER</string>
+    <string name="ForgotPassword">Forgot your password?</string>
+    <string name="Profile">Profile</string>
+    <string name="Messages">Messages</string>
+    <string name="Chat">Chat</string>
+    <string name="Locals">Locals</string>
+    <string name="upcomingEvents">Upcoming Events</string>
+    <string name="billtext">You will be billed the total sum stated above.</string>
+    <string name="seeall">See all</string>
+
+    <string name="nofav">Add people you really like to your favorites.</string>
+    <string name="chatinitiate">Say a little more than Hello. Ask Username a question or mention something about their profile.</string>
+    <string name="noviews">You have no profile views right now.</string>
+    <string name="Userimages">User images</string>
+    <string name="filtertext">If you\'re mixed select multiple</string>
+    <string name="Favorites">Favorites</string>
+    <string name="paymentdetails">Payment details</string>
+    <string name="Matches">Matches</string>
+    <string name="Viewedme">Viewed me</string>
+    <string name="Viewedyou">Viewed you</string>
+    <string name="Continue">Continue</string>
+    <string name="Emailaddress">Email address</string>
+    <string name="Nameoncard">Name on card</string>
+    <string name="Cardnumber">Card number</string>
+    <string name="termspolicy">Terms of Service &amp; Privacy Policy</string>
+    <string name="mmyy">MM/YYYY</string>
+    <string name="CVC">CVC</string>
+    <string name="Pleasefillusername">Enter username</string>
+    <string name="Pleasefilloldusername">Enter old username</string>
+    <string name="Pleasefillnewusername">Enter new username</string>
+    <string name="Pleasefillverifyusername">Enter verify username</string>
+    <string name="Newusernamematcherror">username and verify username doesn\'t match</string>
+
+    <string name="Pleasefillemail">Enter a valid email address</string>
+    <string name="oldemailnotmatched">Current email address not valid</string>
+    <string name="Pleasefillmessage">Please fill message</string>
+    <string name="nointernet">Please check your internet settings!</string>
+    <string name="wevalletagline">Your Circle of People</string>
+
+    <string name="register_tagline">Meet friends, go on dates, start meaningful relationships</string>
+
+
+    <string name="view_images">View images</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="i_am_from">I am from</string>
+    <string name="languages">Languages</string>
+    <string name="i_am">I am :</string>
+    <string name="one_word_describe_yourself">One word that describes me</string>
+    <string name="viewed_me">Viewed Me</string>
+    <string name="who_i_viewd">Who I Viewed</string>
+    <string name="locals">Locals</string>
+    <string name="world">World</string>
+    <string name="username">Username</string>
+    <string name="received_messages">Received </string>
+    <string name="sent_messages">Sent </string>
+
+    <string name="nav_item_FAQ">FAQ</string>
+    <string name="nav_item_settings">Settings</string>
+    <string name="filters">Filter</string>
+    <string name="nav_item_upgrade">Upgrade</string>
+    <string name="nav_item_submit_qf">Contact</string>
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+    <string name="how_tall_are_you">How tall are you ?</string>
+    <string name="select_one">(select one)</string>
+    <string name="emailhint">email@address.com</string>
+    <string name="emailverifyalert">To send messages please confirm your email address.\n\nRemember to check your spam and promotion folders as well.\n</string>
+    <string name="select">Select</string>
+    <string name="Onlinenow">Online</string>
+    <string name="next">Next</string>
+    <string name="select_upto_four">(Select up to four)</string>
+    <string name="which_laguage_do_you_speak">Which language do you speak ?</string>
+    <string name="whats_your_religion">What\'s your religion ?</string>
+    <string name="describe_yourself_in_one_word">Describe yourself in one word ?</string>
+    <string name="do_you_have_pets">Do you have pets ?</string>
+    <string name="what_kind_of_movies_you_watch">What kind of movies do you watch ?</string>
+    <string name="do_you_drink">Do you drink ?</string>
+    <string name="do_you_smoke">Do you smoke ?</string>
+    <string name="whats_your_interest">What are your interests?</string>
+    <string name="insert_edit_hint">Insert your answer here , minimum of 10 characters please.</string>
+    <string name="whats_your_favorite_quote">Whats your favorite quote ?</string>
+    <string name="iama">I am a:</string>
+    <string name="password">Password</string>
+    <string name="confirmpassword">Confirm password</string>
+    <string name="Signup_Pleasefillvalidemail">Enter a valid email address.</string>
+    <string name="Signup_Pleasestr_hearus">Tell us how you hear about us.</string>
+    <string name="Signup_Pleasefillconfirmemail">Re-enter you Email.</string>
+    <string name="Signup_Pleasefillnewemail">Enter new email</string>
+    <string name="Signup_Pleasefillverifyemail">Enter verify email.</string>
+    <string name="Signup_newemailmatcherror">Email and verify email doesn\'t match.</string>
+    <string name="Signup_Pleasefillpassword">Make sure to enter a password.</string>
+    <string name="Signup_Pleasefillnewpassword">Enter new password.</string>
+    <string name="Signup_Pleasefillcardnumber">Enter card number.</string>
+    <string name="Signup_Pleasefilldat">Enter the expiration date.</string>
+    <string name="Signup_Pleasefillcvc">Check the CVC number.</string>
+    <string name="Signup_Pleasefillverifypassword">Enter verify password.</string>
+    <string name="Signup_Pleasefillconfirmpassword">Re-enter your password.</string>
+    <string name="Signup_passwordmatcherror">The passwords you have provided do not match. Please try again</string>
+    <string name="Signup_emailmatcherror">The emails you have provided  do not match. Please try again</string>
+    <string name="Signup_Pleasefillage">please select your age</string>
+    <string name="Signup_Pleasefillgender">please select your gender</string>
+    <string name="Signup_Pleaseselectone">please select an answer to continue.</string>
+    <string name="Signup_Pleasefillcountry">Enter your country.</string>
+    <string name="Signup_Pleasefillheight">Enter your Height.</string>
+    <string name="Signup_Pleasefillreligion">Enter your Religion.</string>
+    <string name="Signup_Pleasefillreason">Please choose reason for report.</string>
+    <string name="Signup_Pleasefilllanguages">Please fill languages.</string>
+    <string name="Signup_Pleasefillaction">Please choose action for that.</string>
+    <string name="Signup_Pleasefillcardname">Enter name on card.</string>
+    <string name="Signup_Pleasefillcity">Enter your city.</string>
+    <string name="Signup_Pleasefillmainimage">Upload a picture of yourself to register.</string>
+    <string name="agerestriction">You must be (18) eighteen years or older to use Albanian Circle</string>
+    <string name="Submit">Submit</string>
+    <string name="send">Send</string>
+    <string name="goinvisible">Go invisible</string>
+    <string name="emailnoti">Email notifications</string>
+    <string name="uploadimages">Upload images</string>
+    <string name="forgottext">Please enter your email below and tap Send to have your password emailed to you. Remember to also check your spam and junk folder.</string>
+    <!--<string name="needhelp">Need more help? Email us: <font color="#95150c"> support@albaniancircle.com</font></string>-->
+    <string name="needhelp">Need more help? Email us</string>
+    <string name="usersearchhelp">Enter a username and hit search on the keyboard</string>
+    <string name="imaagedeletealert">You can\'t delete all your images. You account must have at least one image.</string>
+    <string name="sendmessage">Send Message</string>
+    <string name="aboutme">About me</string>
+    <string name="addtofavorites">Add to favorites</string>
+    <string name="reportuser">Report user</string>
+    <string name="blockuser">Block user</string>
+    <string name="unblockuser">Unblock user</string>
+    <string name="blocked">Blocked</string>
+    <string name="membership">Membership</string>
+    <string name="reportwarning">You can only report users based on the content of their Albanian Circle profile. Reporting users because you don\'t like them or have silly disputes with them will result in your account being deleted. Block someone if you don\'t like them.</string>
+
+
+    <string name="your_description">Your Description</string>
+    <string name="describe_details">Talk about your hobbies, your goals and aspirations. Talk about yourself and what makes you unique.</string>
+    <string name="favsong">What is your favorite albanian song?</string>
+
+    <string name="enter_ten_charactors">Your answer must contain a minimum of (10) ten characters.</string>
+    <string name="find_matches">To find the your best matches, you are required to
+    answer the following statements on a 1 to 10 scale.</string>
+    <string name="editprofile">Edit profile</string>
+    <string name="editprofile_nl">Edit\nProfile</string>
+    <string name="AnswerMatchCard">Match\nCard</string>
+    <string name="macthcancel">Are you sure you want to cancel match making?</string>
+    <string name="newmatchconfirmation">Are you sure you want to answer new matches questions?</string>
+    <string name="selectone">Please submit your answer before going on to the next question. make sure to answer honestly!</string>
+
+    <string name="uploadimagestext">Upload images of yourself.Make sure you upload a real image of you that shows your face or your account will be deleted. Minimum one image is required.</string>
+
+
+    <!-- navigation drawer item labels  -->
+    <string-array name="nav_drawer_labels_left">
+        <item>@string/nav_item_FAQ</item>
+        <item>@string/nav_item_settings</item>
+        <item>@string/nav_item_upgrade</item>
+        <item>@string/nav_item_submit_qf</item>
+    </string-array>
+
+
+    <string-array name="offers_array">
+        <item>Send Unlimited Messages!</item>
+        <item>Get way more profile views!</item>
+        <item>Unlock the best features!</item>
+        <!--<item>Remove Ads!</item>-->
+    </string-array>
+
+
+    <string name="endingIn">Card ending in</string>
+    <string name="progressMessage">Creating Token…</string>
+    <string name="validationErrors">Validation Errors</string>
+    <string name="cardNumber">Card Number</string>
+    <string name="save">Save</string>
+    <string name="cvc">CVC</string>
+    <string name="ok">OK</string>
+    <string name="powered">Powered by <b>stripe</b></string>
+    <string name="uploadphoto">Upload Photo</string>
+    <string name="uploadfrom">Where do you want to upload from?</string>
+
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_second">Second Activity</string>
+    <string name="toast_track_exception">Exception is recorded. Check the Crashes and Exceptions on Google Dashboard!</string>
+    <string name="toast_app_crash">The app will crash now! Check the Crashes and Exceptions on Google Dashboard!</string>
+    <string name="fragment_footer">Fragment is loaded! Check the screen view on Google Analytics Dashboard.</string>
+    <string name="msg_instructions">Click on each button to see the appropriate tracking on Google Analytics</string>
+    <string name="btn_second_screen">Second Screen</string>
+    <string name="btn_send_event">Track Event</string>
+    <string name="btn_exception_tracking">Track Exception</string>
+    <string name="btn_app_crash">Track App Crash</string>
+    <string name="btn_load_fragment">Fragment Tracking</string>
+    <string name="selectheight">Height</string>
+    <string name="selectreligion">Religion</string>
+    <string name="Unanswered">.....</string>
+
+
+    <string name="question1">Close to family\--Far from family</string>
+    <string name="question2">Love\--Lottery</string>
+    <string name="question3">I\'ll pay on the first date\--To each their own</string>
+    <string name="question4">Morning person\--Night owel</string>
+    <string name="question5">Independent\--Dependent </string>
+    <string name="question6">Goal oriented\--Leave it to destiny</string>
+    <string name="question7">With my heart\--With my brain</string>
+    <string name="question8">Tolerant\--Intolerant</string>
+    <string name="question9">Charitable\--Greedy</string>
+    <string name="question10">Conditional\--Unconditional</string>
+    <string name="question11">Go out on dates\--Netflix and Chill</string>
+    <string name="question12">Friends\--Family</string>
+    <string name="question13">Messy\--Organized</string>
+    <string name="question14">I\'m a communicator\--I\'m reserved</string>
+    <string name="question15">Change it up\--Stick to routine</string>
+    <string name="question16">I do a lot in my spare time\--I relax in my spare time</string>
+    <string name="question17">Forgiving\--No second chance</string>
+    <string name="question18">Traditional\--Modern</string>
+    <string name="question19">City\--Suburbs</string>
+    <string name="question20">Order out\--Home cooked meal</string>
+
+
+    <string name="item_1">ACTIVITY</string>
+    <string name="item_2">MESSAGES</string>
+    <string name="item_3">LOCALS</string>
+
+
+    <string name="locationpermission">Tap to enable location services and see nearby people</string>
+
+    <string name="meetsingles">Meet singles</string>
+    <string name="showme">Show me</string>
+    <string name="agerange">Age range</string>
+    <string name="withthehritage">With the heritage</string>
+    <string name="apply">Apply</string>
+
+    <string-array name="heritage_array">
+        <item>Albanian only</item>
+        <item>All</item>
+        <item>Albanian</item>
+        <item>Bosnian</item>
+        <item>Greek</item>
+        <item>Macedonian</item>
+
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+</resources>

@@ -1,0 +1,12 @@
+{"ErrorCode":"1","Matchcards":[{"MatchMakingId":"13","UserId":"77","Question1":"1","Question2":"2","Question3":"1","Question4":"2","Question5":"1","Question6":"1","Question7":"1","Question8":"2","Question9":"1","Question10":"2","Question11":"1","Question12":"2","Question13":"1","Question14":"2","Question15":"1","Question16":"2","Question17":"1","Question18":"2","Question19":"1","Question20":"2"},{"MatchMakingId":"14","UserId":"71","Question1":"2","Question2":"2","Question3":"1","Question4":"2","Question5":"1","Question6":"1","Question7":"2","Question8":"2","Question9":"1","Question10":"1","Question11":"2","Question12":"2","Question13":"1","Question14":"2","Question15":"1","Question16":"1","Question17":"2","Question18":"2","Question19":"1","Question20":"1"}]}
+
+
+
+{"ErrorCode":"1","MatchcardScore":65}
+
+
+Upload failed
+You uploaded an APK that is signed with a different certificate to your previous APKs. You must use the same certificate. Your existing APKs are signed with the certificate(s) with fingerprint(s):
+[ SHA1: 43:3A:94:F5:1E:F6:07:AB:EE:15:E6:75:3B:70:BC:73:FA:6A:4D:BC ]
+and the certificate(s) used to sign the APK you uploaded have fingerprint(s):
+[ SHA1: 1B:CF:47:B0:01:A5:2A:10:B2:4D:CB:94:FB:AD:F9:01:62:19:FD:2A ]

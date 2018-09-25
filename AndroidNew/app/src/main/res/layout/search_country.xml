@@ -1,0 +1,89 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+    <!--<LinearLayout-->
+        <!--android:id="@+id/ll_header"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="48dp"-->
+        <!--android:layout_alignParentTop="true">-->
+
+        <!--<include layout="@layout/header" />-->
+    <!--</LinearLayout>-->
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+        <Spinner
+            android:id="@+id/sp_country_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Country"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp" />
+
+        <ImageView
+            android:id="@+id/img_country_search"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="5dp"
+            android:visibility="visible"
+            android:inputType="text"
+            android:src="@drawable/app_icon"
+            android:hint="Username"
+            android:imeOptions="actionSearch"
+            android:paddingLeft="3dp" />
+
+    </LinearLayout>
+
+    <!--<ImageView-->
+    <!--android:id="@+id/iv_add_image"-->
+    <!--android:layout_width="100dp"-->
+    <!--android:layout_height="100dp"-->
+    <!--android:background="@drawable/tv_back_border" />-->
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/gv_userimages"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:columnWidth="110dp"
+        android:fadingEdge="none"
+        android:horizontalSpacing="4dp"
+        android:numColumns="auto_fit"
+        android:scrollbars="none"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="6dp"/>
+
+
+
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/gv_userimages_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:columnWidth="110dp"
+        android:fadingEdge="none"
+        android:horizontalSpacing="4dp"
+        android:numColumns="auto_fit"
+        android:scrollbars="none"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="6dp">
+
+
+    </android.support.v7.widget.RecyclerView>
+</LinearLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_header"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="vertical">
+
+        <include layout="@layout/header_profile" />
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="@dimen/dimen_10dp"
+        android:text="@string/favsong"
+        android:textSize="@dimen/large_text"
+        android:textStyle="bold" />
+
+
+    <EditText
+        android:id="@+id/edt_albanian_song"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_margin="@dimen/dimen_10dp"
+        android:background="@drawable/tv_back_border"
+        android:gravity="top"
+        android:hint="@string/insert_edit_hint"
+        android:padding="5dp" />
+</LinearLayout>

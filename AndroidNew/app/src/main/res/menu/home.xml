@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:visible="true"
+        android:icon="@drawable/btprofile"
+        android:id="@+id/profile"
+        android:orderInCategory="1"
+        android:title=""
+        app:showAsAction="always" />
+    <item
+        android:visible="true"
+        android:icon="@drawable/list"
+        android:id="@+id/list"
+        android:orderInCategory="2"
+        android:title=""
+        app:showAsAction="always" />
+    <item
+        android:visible="true"
+        android:icon="@drawable/chat_icon"
+        android:id="@+id/chat"
+        android:orderInCategory="3"
+        android:title=""
+        app:showAsAction="always" />
+</menu>

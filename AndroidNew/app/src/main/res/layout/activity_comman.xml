@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/container_body"
+    android:orientation="vertical"
+    android:background="@color/whiteprofile"
+    tools:context="com.OldScreens.EditProfileActivity">
+
+    <LinearLayout
+        android:id="@+id/ll_header"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical">
+
+        <include layout="@layout/header" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/grey" />
+
+            <RelativeLayout
+                android:id="@+id/rl_how_tall"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_how_tall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:text="How tall are you?"
+                    android:textSize="17sp"
+                    android:textColor="@color/black"
+                    android:textStyle="normal" />
+
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/grey" />
+
+            <RelativeLayout
+                android:id="@+id/rl_your_religion"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_your_religion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:text="Whats your religion?"
+                    android:textSize="17sp"
+                    android:textColor="@color/black"
+                    android:textStyle="normal" />
+
+
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/grey" />
+
+            <RelativeLayout
+                android:id="@+id/rl_langauage_speak"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_langauage_speak"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:text="Which languages do you speak?"
+                    android:textSize="17sp"
+                    android:textColor="@color/black"
+                    android:textStyle="normal" />
+
+
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/grey" />
+
+            <RelativeLayout
+                android:id="@+id/rl_your_pets"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_your_pets"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:text="Do you have pets?"
+                    android:textSize="17sp"
+                    android:textColor="@color/black"
+                    android:textStyle="normal" />
+
+
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/grey" />
+
+
+            <RelativeLayout
+                android:id="@+id/rl_drink"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_drink"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:text="Do you drink?"
+                    android:textSize="17sp"
+                    android:textColor="@color/black"
+                    android:textStyle="normal" />
+
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/grey" />
+
+            <RelativeLayout
+                android:id="@+id/rl_smoke"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_smoke"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:text="Do you smoke?"
+                    android:textSize="17sp"
+                    android:textColor="@color/black"
+                    android:textStyle="normal" />
+
+
+
+            </RelativeLayout>
+
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/grey" />
+
+
+            <RelativeLayout
+                android:id="@+id/rl_your_desc"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_your_desc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:text="Your description?"
+                    android:textSize="17sp"
+                    android:textColor="@color/black"
+                    android:textStyle="normal" />
+
+
+            </RelativeLayout>
+
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/grey" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</LinearLayout>

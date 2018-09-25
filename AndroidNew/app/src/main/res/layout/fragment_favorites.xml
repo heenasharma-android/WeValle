@@ -1,0 +1,131 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.MainFragments.FavoritesFragment">
+
+    <LinearLayout
+        android:id="@+id/ll_header"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/lay_relative"
+            android:layout_width="fill_parent"
+            android:layout_height="48dp"
+            android:background="@color/buttoncolornew">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:id="@+id/rl_back_header"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight="1">
+
+
+                    <!--<ImageView-->
+                    <!--android:id="@+id/img_slider"-->
+                    <!--android:layout_width="30dp"-->
+                    <!--android:layout_height="35dp"-->
+
+                    <!--android:visibility="gone"-->
+                    <!--android:layout_centerVertical="true"-->
+                    <!--android:paddingLeft="10dp"-->
+                    <!--android:src="@drawable/side_menu_btn" />-->
+
+                    <ImageView
+                        android:id="@+id/img_back"
+                        android:layout_width="40dp"
+                        android:layout_height="35dp"
+                        android:layout_centerVertical="true"
+                        android:paddingLeft="8dp"
+                        android:src="@drawable/left_arrow" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight="3.5">
+
+                    <TextView
+                        android:id="@+id/txt_headerlogo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="@string/app_name"
+                        android:textColor="#ffffff"
+                        android:textSize="17sp"
+                        android:textStyle="bold" />
+
+                    <!--<ImageView-->
+                    <!--android:id="@+id/img_headerlogo"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_centerInParent="true"-->
+                    <!--android:layout_marginBottom="10dp"-->
+                    <!--android:layout_marginTop="10dp"-->
+                    <!--android:src="@drawable/search_btn"-->
+                    <!--android:visibility="visible" />-->
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/rl_header_new"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight="1">
+
+
+                    <TextView
+                        android:id="@+id/txt_header_right"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="New"
+                        android:textColor="#ffffff"
+                        android:textSize="18sp"
+                        android:visibility="gone" />
+
+                </RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/ll_nofavorite"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="You have not added anyone to favorites yet" />
+
+    </RelativeLayout>
+
+
+    <ListView
+        android:id="@+id/lv_userfavorites"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:background="#ffffff"
+        android:choiceMode="singleChoice">
+
+    </ListView>
+
+</LinearLayout>

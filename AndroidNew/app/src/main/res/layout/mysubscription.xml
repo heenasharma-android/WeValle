@@ -1,0 +1,67 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_header"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentTop="true">
+
+        <include layout="@layout/header" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_messages"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/ll_header"
+        >
+
+        <TextView
+            android:id="@+id/txt_questiontext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dimen_10dp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:text="Your premium membership will renew on:"
+
+            android:textColor="#000000"
+            android:textSize="17dp" />
+
+        <TextView
+            android:id="@+id/txt_exp_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:padding="@dimen/dimen_10dp"
+            android:gravity="center"
+            android:text=""
+            android:textColor="#000000"
+            android:textSize="17dp" />
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_cancelsubscription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_messages"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="85dp"
+        android:layout_marginLeft="45dp"
+        android:visibility="gone"
+        android:layout_marginRight="45dp"
+        android:background="@drawable/red_bg_with_rounded_corner"
+        android:text="Cancel subscription"
+        android:textColor="#ffffff"
+        android:textSize="17sp" />
+
+</RelativeLayout>

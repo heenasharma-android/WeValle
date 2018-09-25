@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- End current session if app sleeps for a period of time -->
+    <integer name="ga_sessionTimeout">300</integer>
+
+    <!-- Enable automatic Activity measurement -->
+    <bool name="ga_autoActivityTracking">true</bool>
+
+    <!--  The property id associated with this analytics tracker -->
+    <!--<string name="ga_trackingId">sumit/UA-73155425-1</string>-->
+    <string name="ga_trackingId">UA-40785959-2</string>
+
+    <string name="ga_sampleFrequency">100.0</string>
+
+    <bool name="ga_reportUncaughtExceptions">true</bool>
+
+    <screenName name="com.MainFragments.HomeNewFragment">Home</screenName>
+
+    <screenName name="com.MainFragments.ProfileFragment">Profile</screenName>
+    <screenName name="com.MainFragments.SettingsFragment">Settings Screen</screenName>
+    <screenName name="com.MainFragments.BloackedUserFragment">BLocked USers Screen</screenName>
+
+    <screenName name="com.MainFragments.ChatFragment">Chating</screenName>
+    <screenName name="com.MainFragments.ReportUserFragment">Report Spam</screenName>
+    <screenName name="com.MainFragments.LocalsFragment">LocalsAroundMe</screenName>
+    <screenName name="com.MainFragments.WhoIViewedFragment">Who i viewed Screen</screenName>
+    <screenName name="com.MainFragments.ViewedMeFragment">Viewed Me</screenName>
+
+    <screenName name="com.MainFragments.MatchesFragment">Matches Questions Screen</screenName>
+    <screenName name="com.MainFragments.PaymentFragment">Payment Screen</screenName>
+    <screenName name="com.MainFragments.UpgradeFragment">Subscriptions</screenName>
+    <screenName name="com.MainFragments.UserImagesFragment">Images</screenName>
+    <screenName name="com.MainFragments.ImageFragment">View Image Screen</screenName>
+    <screenName name="com.MainFragments.SearchNewFragment">Search</screenName>
+    <screenName name="com.MainFragments.FavoritesFragment">My Favorites</screenName>
+    <screenName name="com.MainFragments.MessagesFragment">Messages</screenName>
+    <screenName name="com.editprofile.EditProfileFragment">Edit Profile</screenName>
+    <screenName name="com.albaniancircle.Splash">Splash</screenName>
+
+    <screenName name="com.SigninSignup.SignInFragment">SignIn</screenName>
+    <screenName name="com.SigninSignup.SignUpFirstFragment">Signup</screenName>
+
+    <!--
+      See Project Structure -> Analytics -> Google Analytics -> Learn More
+      to learn more about configuring this file.
+    -->
+</resources>

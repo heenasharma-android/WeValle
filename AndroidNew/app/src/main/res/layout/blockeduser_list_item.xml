@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_main_historytiem"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/img_user"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_margin="8dp"
+
+        android:src="@drawable/user_icon" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_toRightOf="@+id/img_user"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginLeft="5dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txt_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Central Park"
+            android:singleLine="true"
+            android:layout_marginLeft="3dp"
+            android:textColor="@color/red_theme"
+            android:textSize="19sp" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <!--<ImageView-->
+            <!--android:id="@+id/img_locationimage"-->
+            <!--android:layout_width="22dp"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_alignParentLeft="true"-->
+            <!--android:layout_height="22dp"-->
+            <!--android:src="@drawable/ic_launcher" />-->
+
+
+            <TextView
+                android:id="@+id/txt_quote_user"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="3dp"
+
+                android:text="14, Opp. WTC, New York "
+                android:textSize="17sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+
+
+            <TextView
+                android:id="@+id/txt_address_user"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="3dp"
+
+                android:text="If you went to sleep broke you in the night..."
+                android:textSize="17sp" />
+
+        </RelativeLayout>
+
+
+
+
+    </LinearLayout>
+
+    <!--<ImageView-->
+        <!--android:id="@+id/txt_fare_history"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:src="@drawable/ic_launcher"/>-->
+
+</RelativeLayout>
