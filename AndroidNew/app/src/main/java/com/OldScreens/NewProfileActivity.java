@@ -7,7 +7,6 @@ import android.os.Build;
 import android.os.Bundle;
 import android.support.annotation.RequiresApi;
 import android.support.design.widget.FloatingActionButton;
-import android.support.v4.app.Fragment;
 import android.support.v4.content.ContextCompat;
 import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;
@@ -22,24 +21,20 @@ import android.view.WindowManager;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
-import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.MainFragments.ReportUserFragment;
 import com.MainFragments.SlideActivity;
 import com.SigninSignup.SettingActivity;
 import com.albaniancircle.AlbanianApplication;
 import com.albaniancircle.AlbanianConstants;
 import com.albaniancircle.AlbanianPreferances;
-import com.albaniancircle.FragmentChangeListener;
 import com.albaniancircle.R;
 import com.android.volley.Request;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.VolleyLog;
 import com.android.volley.toolbox.StringRequest;
-import com.editprofile.PasswordFragment;
 import com.models.SignupModel;
 import com.models.UserImagesModel;
 import com.squareup.picasso.Picasso;
@@ -51,17 +46,17 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
-public class NewProfileActivity  extends AppCompatActivity {
+public class NewProfileActivity extends AppCompatActivity {
 
     ViewPager imageViewpager;
     AlbanianPreferances pref;
     SignupModel profilemodel;
-    FloatingActionButton sendmessage,editProfile;
+    FloatingActionButton sendmessage, editProfile;
     String userId;
-    String UserId,UserName,UserImage;
+    String UserId, UserName, UserImage;
     ImageView btn_addtofav;
-    private TextView tvName, tvHeritage,tvAbout,tvLanguage,tvLocation,tvProfession,tvAge;
-
+    private TextView tvName, tvHeritage, tvAbout, tvLanguage, tvLocation, tvProfession, tvAge;
+    ArrayAdapter<String> arrayAdapter;
 
     @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     @Override
@@ -69,19 +64,20 @@ public class NewProfileActivity  extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_new_profile);
         pref = new AlbanianPreferances(this);
-        ImageView back=(ImageView)findViewById(R.id.img_back);
+        ImageView back = (ImageView) findViewById(R.id.img_back);
         userId = getIntent().getStringExtra("userId");
-        ImageView img_rightmenu=(ImageView)findViewById(R.id.img_rightmenu);
-        btn_addtofav=(ImageView) findViewById(R.id.btn_addtofav);
+        ImageView img_rightmenu = (ImageView) findViewById(R.id.img_rightmenu);
+        btn_addtofav = (ImageView) findViewById(R.id.btn_addtofav);
 
         img_rightmenu.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 if (userId.equalsIgnoreCase(pref.getUserData().getUserId())) {
                     Intent intent = new Intent(NewProfileActivity.this, SettingActivity.class);
+                    intent.putExtra("screen", "setting");
+                    intent.putExtra("userId", userId);
                     startActivity(intent);
-                }
-                else {
+                } else {
                     toggleDrawer();
                 }
             }
@@ -100,11 +96,10 @@ public class NewProfileActivity  extends AppCompatActivity {
             getUserDetail(pref.getUserData().getUserId());
 
         } else {
-            if (userId.equalsIgnoreCase(pref.getUserData().getUserId())){
+            if (userId.equalsIgnoreCase(pref.getUserData().getUserId())) {
                 editProfile.setVisibility(View.VISIBLE);
                 sendmessage.setVisibility(View.GONE);
-            }
-            else {
+            } else {
                 editProfile.setVisibility(View.GONE);
                 sendmessage.setVisibility(View.VISIBLE);
             }
@@ -119,18 +114,102 @@ public class NewProfileActivity  extends AppCompatActivity {
 
     }
 
+    private void toggleDrawer() {
+
+
+        android.app.AlertDialog.Builder builderSingle;
+
+        if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.HONEYCOMB) {
+            builderSingle = new android.app.AlertDialog.Builder(new ContextThemeWrapper(NewProfileActivity.this, android.R.style.Theme_Holo_Light_Dialog));
+        } else {
+            builderSingle = new android.app.AlertDialog.Builder(
+                    NewProfileActivity.this);
+        }
+
+
+//      builderSingle.setTitle("Upload image");
+        arrayAdapter = new ArrayAdapter<String>(
+                NewProfileActivity.this,
+                android.R.layout.select_dialog_item);
+
+
+        arrayAdapter.add(getResources().getString(R.string.addtofavorites));
+        arrayAdapter.add(getResources().getString(R.string.reportuser));
+
+        if (profilemodel.getIsBlocked().equals("1")) {
+
+            arrayAdapter.add(getResources().getString(R.string.blockuser));
+
+        } else {
+            arrayAdapter.add(getResources().getString(R.string.unblockuser));
+        }
+
+
+        builderSingle.setNegativeButton("Cancel",
+                new DialogInterface.OnClickListener() {
+
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+
+                    }
+                });
+
+        builderSingle.setAdapter(arrayAdapter,
+                new DialogInterface.OnClickListener() {
+
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+
+                        dialog.dismiss();
+
+                        long strName = arrayAdapter.getItemId(which);
+
+
+                        if (strName == 0) {
+                            // comment report
+
+                            addToFavorite();
+
+                        } else if (strName == 1) {
+                            // comment report
+
+                            reportUser();
+
+                        } else if (strName == 2) {
+                            // comment report
+
+                            if (profilemodel.getIsBlocked().equals("1")) {
+
+                                blockUnblockUser("blockuser");
+
+                            } else {
+                                blockUnblockUser("unblockuser");
+                            }
+
+
+                        }
+
+
+                    }
+                });
+
+        builderSingle.show();
+
+
+    }
+
     private void addToFavorite() {
 
-        AlbanianApplication.showProgressDialog(getApplicationContext(), "", "Loading...");
+        AlbanianApplication.showProgressDialog(NewProfileActivity.this, "", "Loading...");
 
-        StringRequest sr = new StringRequest(Request.Method.POST, AlbanianConstants.base_url , new Response.Listener<String>() {
+        StringRequest sr = new StringRequest(Request.Method.POST, AlbanianConstants.base_url, new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {
                 Log.d(AlbanianConstants.TAG, "addtofav= " + response.toString());
 
                 parseFavResponse(response.toString());
 
-                AlbanianApplication.hideProgressDialog(getApplicationContext());
+                AlbanianApplication.hideProgressDialog(NewProfileActivity.this);
 
             }
         }, new Response.ErrorListener() {
@@ -139,7 +218,7 @@ public class NewProfileActivity  extends AppCompatActivity {
                 VolleyLog.d(AlbanianConstants.TAG, "Error: " + error.getMessage());
                 Log.d(AlbanianConstants.TAG, "" + error.getMessage() + "," + error.toString());
 
-                AlbanianApplication.hideProgressDialog(getApplicationContext());
+                AlbanianApplication.hideProgressDialog(NewProfileActivity.this);
 
             }
         })
@@ -147,12 +226,10 @@ public class NewProfileActivity  extends AppCompatActivity {
         {
 
 
-
             @Override
-            protected Map<String, String> getParams()
-            {
-                Log.d("sumit","user_favorite_from "+pref.getUserData().getUserId());
-             //   Log.d("sumit","user_favorite_to "+profileVisitedID);
+            protected Map<String, String> getParams() {
+                Log.d("sumit", "user_favorite_from " + pref.getUserData().getUserId());
+                //   Log.d("sumit","user_favorite_to "+profileVisitedID);
 
                 Map<String, String> params = new HashMap<String, String>();
 
@@ -173,16 +250,16 @@ public class NewProfileActivity  extends AppCompatActivity {
 
     private void blockUnblockUser(final String blockstring) {
 
-        AlbanianApplication.showProgressDialog(getApplicationContext(), "", "Loading...");
+        AlbanianApplication.showProgressDialog(NewProfileActivity.this, "", "Loading...");
 
-        StringRequest sr = new StringRequest(Request.Method.POST, AlbanianConstants.base_url , new Response.Listener<String>() {
+        StringRequest sr = new StringRequest(Request.Method.POST, AlbanianConstants.base_url, new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {
-                Log.d(AlbanianConstants.TAG, "blockUnblockUser= "+response.toString());
+                Log.d(AlbanianConstants.TAG, "blockUnblockUser= " + response.toString());
 
-                parseBlockResponse(response.toString());
+                parseBlockResponse(response.toString(), blockstring);
 
-                AlbanianApplication.hideProgressDialog(getApplicationContext());
+                AlbanianApplication.hideProgressDialog(NewProfileActivity.this);
 
             }
         }, new Response.ErrorListener() {
@@ -191,7 +268,7 @@ public class NewProfileActivity  extends AppCompatActivity {
                 VolleyLog.d(AlbanianConstants.TAG, "Error: " + error.getMessage());
                 Log.d(AlbanianConstants.TAG, "" + error.getMessage() + "," + error.toString());
 
-                AlbanianApplication.hideProgressDialog(getApplicationContext());
+                AlbanianApplication.hideProgressDialog(NewProfileActivity.this);
 
             }
         })
@@ -199,10 +276,8 @@ public class NewProfileActivity  extends AppCompatActivity {
         {
 
 
-
             @Override
-            protected Map<String, String> getParams()
-            {
+            protected Map<String, String> getParams() {
                 Map<String, String> params = new HashMap<String, String>();
 
                 params.put("api_name", blockstring);
@@ -221,7 +296,7 @@ public class NewProfileActivity  extends AppCompatActivity {
         AlbanianApplication.getInstance().addToRequestQueue(sr);
     }
 
-    private void parseBlockResponse(String Result) {
+    private void parseBlockResponse(String Result, String blockstring) {
 
 
         if (Result != null) {
@@ -239,39 +314,41 @@ public class NewProfileActivity  extends AppCompatActivity {
                     Log.d(AlbanianConstants.TAG, "" + ErrorCode);
 
                     if (ErrorCode.equalsIgnoreCase("1")) {
-
-
-                        String mTitle = getResources().getString(R.string.app_name);
-
-                        AlbanianApplication.ShowAlert(getApplicationContext(), mTitle,
-                                ErrorMessage, false);
-
-
-                    }
-
-                    else if(ErrorCode.equals("0") )
-                    {
+                        if (blockstring.equalsIgnoreCase("blockuser")) {
+                            profilemodel.setIsBlocked("0");
+                            arrayAdapter.add(getResources().getString(R.string.unblockuser));
+                        } else {
+                            profilemodel.setIsBlocked("1");
+                            arrayAdapter.add(getResources().getString(R.string.blockuser));
+                        }
 
                         String mTitle = getResources().getString(R.string.app_name);
 
-                        AlbanianApplication.ShowAlert(getApplicationContext(), mTitle,
+                        AlbanianApplication.ShowAlert(NewProfileActivity.this, mTitle,
                                 ErrorMessage, false);
-                    }
-                    else
-                    {
+                    } else if (ErrorCode.equals("0")) {
+                        if (blockstring.equalsIgnoreCase("blockuser")) {
+                            arrayAdapter.add(getResources().getString(R.string.blockuser));
+                        } else {
+                            arrayAdapter.add(getResources().getString(R.string.blockuser));
+                        }
+                        String mTitle = getResources().getString(R.string.app_name);
+
+                        AlbanianApplication.ShowAlert(NewProfileActivity.this, mTitle,
+                                ErrorMessage, false);
+                    } else {
 
                         String mTitle = getResources().getString(R.string.app_name);
 
-                        AlbanianApplication.ShowAlert(getApplicationContext(), mTitle,
+                        AlbanianApplication.ShowAlert(NewProfileActivity.this, mTitle,
                                 ErrorMessage, false);
                     }
 
 
-                }
-                catch (Exception e) {
+                } catch (Exception e) {
                     // TODO Auto-generated catch block
 //                        e.printStackTrace();
-                    Log.d("sumit","block user exception= "+e);
+                    Log.d("sumit", "block user exception= " + e);
                 }
 
             }
@@ -302,14 +379,13 @@ public class NewProfileActivity  extends AppCompatActivity {
 
                         if (IsFavorite.equals("1")) {
 
-                            Toast.makeText(getApplicationContext(),"Added to favorites!",Toast.LENGTH_SHORT).show();
+                            Toast.makeText(NewProfileActivity.this, "Added to favorites!", Toast.LENGTH_SHORT).show();
 
-                            btn_addtofav.setImageResource(R.drawable.fav_selected);
+                      //      btn_addtofav.setImageResource(R.drawable.fav_selected);
 
-                        }
-                        else
-                        {
-                            btn_addtofav.setImageResource(R.drawable.fav_unselected);
+                        } else {
+                            Toast.makeText(NewProfileActivity.this, "Removed from favorites!", Toast.LENGTH_SHORT).show();
+                          //  btn_addtofav.setImageResource(R.drawable.fav_unselected);
                         }
 
 
@@ -319,34 +395,25 @@ public class NewProfileActivity  extends AppCompatActivity {
 //                                ErrorMessage, false);
 
 
-
-
-                    }
-
-                    else if(ErrorCode.equals("0") )
-                    {
+                    } else if (ErrorCode.equals("0")) {
 
                         String mTitle = getResources().getString(R.string.app_name);
 
-                        AlbanianApplication.ShowAlert(getApplicationContext(), mTitle,
+                        AlbanianApplication.ShowAlert(NewProfileActivity.this, mTitle,
                                 ErrorMessage, false);
-                    }
-                    else
-                    {
+                    } else {
 
                         String mTitle = getResources().getString(R.string.app_name);
 
-                        AlbanianApplication.ShowAlert(getApplicationContext(), mTitle,
+                        AlbanianApplication.ShowAlert(NewProfileActivity.this, mTitle,
                                 ErrorMessage, false);
                     }
 
 
-
-                }
-                catch (Exception e) {
+                } catch (Exception e) {
                     // TODO Auto-generated catch block
 //                        e.printStackTrace();
-                    Log.d("sumit","block user exception= "+e);
+                    Log.d("sumit", "block user exception= " + e);
                 }
 
             }
@@ -355,99 +422,6 @@ public class NewProfileActivity  extends AppCompatActivity {
 
     }
 
-    private void toggleDrawer() {
-
-
-
-        android.app.AlertDialog.Builder builderSingle;
-
-        if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.HONEYCOMB)
-        {
-            builderSingle = new android.app.AlertDialog.Builder(new ContextThemeWrapper(NewProfileActivity.this, android.R.style.Theme_Holo_Light_Dialog));
-        }
-        else
-        {
-            builderSingle = new android.app.AlertDialog.Builder(
-                    NewProfileActivity.this);
-        }
-
-
-//      builderSingle.setTitle("Upload image");
-        final ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(
-                NewProfileActivity.this,
-                android.R.layout.select_dialog_item);
-
-
-        arrayAdapter.add(getResources().getString(R.string.addtofavorites));
-        arrayAdapter.add(getResources().getString(R.string.reportuser));
-
-        if (profilemodel.getIsBlocked().equals("1")) {
-
-            arrayAdapter.add(getResources().getString(R.string.blockuser));
-
-        }
-        else
-        {
-            arrayAdapter.add(getResources().getString(R.string.unblockuser));
-        }
-
-
-
-
-        builderSingle.setNegativeButton("Cancel",
-                new DialogInterface.OnClickListener() {
-
-                    @Override
-                    public void onClick(DialogInterface dialog, int which) {
-
-                    }
-                });
-
-        builderSingle.setAdapter(arrayAdapter,
-                new DialogInterface.OnClickListener() {
-
-                    @Override
-                    public void onClick(DialogInterface dialog, int which) {
-
-                        dialog.dismiss();
-
-                        long strName = arrayAdapter.getItemId(which);
-
-
-                        if (strName == 0) {
-                            // comment report
-
-                           // addToFavorite();
-
-                        } else if (strName == 1) {
-                            // comment report
-
-                            //reportUser();
-
-                        } else if (strName == 2) {
-                            // comment report
-
-                            if (profilemodel.getIsBlocked().equals("1")) {
-
-                                //blockUnblockUser("blockuser");
-
-                            }
-                            else
-                            {
-                               // blockUnblockUser("unblockuser");
-                            }
-
-
-                        }
-
-
-                    }
-                });
-
-        builderSingle.show();
-
-
-    }
 
     private void reportUser() {
 
@@ -459,9 +433,10 @@ public class NewProfileActivity  extends AppCompatActivity {
 //
 //        mActivity.pushFragments(CURRENTTABTAG,
 //                new ReportUserFragment(), false, true, bundle);
-        Fragment fr = new ReportUserFragment();
-        FragmentChangeListener fc = (FragmentChangeListener) getApplicationContext();
-        fc.replaceFragment(fr, "Password");
+        Intent intent = new Intent(NewProfileActivity.this, SettingActivity.class);
+        intent.putExtra("screen", "report");
+        intent.putExtra("userId", userId);
+        startActivity(intent);
 
 
     }
@@ -473,17 +448,17 @@ public class NewProfileActivity  extends AppCompatActivity {
         tvHeritage = (TextView) findViewById(R.id.tv_heritage);
         tvAbout = (TextView) findViewById(R.id.tv_about);
         tvLanguage = (TextView) findViewById(R.id.tv_language);
-        tvLocation= (TextView) findViewById(R.id.tv_location);
+        tvLocation = (TextView) findViewById(R.id.tv_location);
         tvProfession = (TextView) findViewById(R.id.tv_profession);
         tvAge = (TextView) findViewById(R.id.tv_age);
 
         sendmessage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent=new Intent(NewProfileActivity.this,OldChatActivity.class);
-                intent.putExtra("id",UserId);
-                intent.putExtra("name",UserName);
-                intent.putExtra("image",UserImage);
+                Intent intent = new Intent(NewProfileActivity.this, OldChatActivity.class);
+                intent.putExtra("id", UserId);
+                intent.putExtra("name", UserName);
+                intent.putExtra("image", UserImage);
                 startActivity(intent);
 
             }
@@ -492,7 +467,7 @@ public class NewProfileActivity  extends AppCompatActivity {
         editProfile.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent=new Intent(NewProfileActivity.this,EditProfile.class);
+                Intent intent = new Intent(NewProfileActivity.this, EditProfile.class);
                 startActivity(intent);
 
             }
@@ -504,7 +479,7 @@ public class NewProfileActivity  extends AppCompatActivity {
         Log.d("sumit", "useris= " + pref.getUserData().getUserId());
         Log.d("sumit", "useris profileVisitedID= " + profileVisitedID);
 
-        AlbanianApplication.showProgressDialog(this, "", "Loading...");
+        AlbanianApplication.showProgressDialog(NewProfileActivity.this, "", "Loading...");
 
         StringRequest sr = new StringRequest(Request.Method.POST, AlbanianConstants.base_url, new Response.Listener<String>() {
             @Override
@@ -513,7 +488,7 @@ public class NewProfileActivity  extends AppCompatActivity {
             {
                 Log.d(AlbanianConstants.TAG, "profile= " + response.toString());
 
-                AlbanianApplication.hideProgressDialog(getApplicationContext());
+                AlbanianApplication.hideProgressDialog(NewProfileActivity.this);
                 parseResponse(response.toString());
 
 
@@ -525,7 +500,7 @@ public class NewProfileActivity  extends AppCompatActivity {
                 VolleyLog.d(AlbanianConstants.TAG, "Error: " + error.getMessage());
                 Log.d(AlbanianConstants.TAG, "" + error.getMessage() + "," + error.toString());
 
-                AlbanianApplication.hideProgressDialog(getApplicationContext());
+                AlbanianApplication.hideProgressDialog(NewProfileActivity.this);
 
             }
         })
@@ -808,7 +783,7 @@ public class NewProfileActivity  extends AppCompatActivity {
                         Log.d("profilemodel", "profilemodel" + images);
 
                         profilemodel.setUserImages(images);
-                        tvName.setText(!UserName.equals("") ? (UserName+",") : getString(R.string.Unanswered));
+                        tvName.setText(!UserName.equals("") ? (UserName + ",") : getString(R.string.Unanswered));
                         tvLanguage.setText(!UserOtherLanguages.equals("") ? (UserOtherLanguages) : getString(R.string.Unanswered));
                         tvAbout.setText(!UserDescription.equals("") ? (UserDescription) : getString(R.string.Unanswered));
                         tvLocation.setText(!UserCity.equals("") ? (UserCity + ", " + UserCountry) : getString(R.string.Unanswered));
@@ -840,7 +815,7 @@ public class NewProfileActivity  extends AppCompatActivity {
         Log.d("sucess", "sucess" + profilemodel.getUserImages());
         CustomPagerAdapter customPagerAdapter = new CustomPagerAdapter(this, profilemodel.getUserImages());
         imageViewpager.setAdapter(customPagerAdapter);
-      ///  Log.d("sucess", "sucess" + profilemodel.getUserImages());
+        ///  Log.d("sucess", "sucess" + profilemodel.getUserImages());
     }
 
 
@@ -872,12 +847,12 @@ public class NewProfileActivity  extends AppCompatActivity {
 
             ImageView imageView = (ImageView) itemView.findViewById(R.id.imageView);
             //imageView.setImageResource(mResources[position]);
-            Picasso.with(getApplicationContext()).load(userImagesModels.get(position).getUserImageUrl()).fit().centerCrop().into(imageView);
+            Picasso.with(NewProfileActivity.this).load(userImagesModels.get(position).getUserImageUrl()).fit().centerCrop().into(imageView);
             imageView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    Intent intent=new Intent(mContext, SlideActivity.class);
-                    intent.putParcelableArrayListExtra("images",userImagesModels);
+                    Intent intent = new Intent(mContext, SlideActivity.class);
+                    intent.putParcelableArrayListExtra("images", userImagesModels);
                     mContext.startActivity(intent);
                 }
             });

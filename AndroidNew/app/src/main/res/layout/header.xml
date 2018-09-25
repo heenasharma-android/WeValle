@@ -112,7 +112,6 @@
                     android:layout_marginLeft="@dimen/dimen_45dp"
                     android:layout_marginRight="@dimen/dimen_45dp"
                     android:textColor="#ffffff"
-                    android:visibility="gone"
                     android:textSize="17sp" />
 
             </RelativeLayout>

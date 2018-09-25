@@ -1,47 +1,32 @@
 package com.SigninSignup;
 
-import android.app.AlertDialog;
-import android.content.DialogInterface;
-import android.content.Intent;
 import android.content.SharedPreferences;
-import android.net.Uri;
+import android.os.Build;
 import android.os.Bundle;
+import android.support.annotation.RequiresApi;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
-import android.view.ContextThemeWrapper;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.ArrayAdapter;
-import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.RelativeLayout;
 import android.widget.ScrollView;
 import android.widget.Switch;
 import android.widget.TextView;
-import android.widget.Toast;
 
+import com.MainFragments.ReportUserFragment;
 import com.MainFragments.SettingsFragment;
-import com.albaniancircle.AlbanianApplication;
-import com.albaniancircle.AlbanianConstants;
 import com.albaniancircle.AlbanianPreferances;
 import com.albaniancircle.FragmentChangeListener;
 import com.albaniancircle.R;
-import com.android.volley.Request;
-import com.android.volley.Response;
-import com.android.volley.VolleyError;
-import com.android.volley.VolleyLog;
-import com.android.volley.toolbox.StringRequest;
-import com.editprofile.PasswordFragment;
 
 import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.Map;
 
 public class SettingActivity extends AppCompatActivity implements FragmentChangeListener{
     ListView listView;
@@ -70,6 +55,7 @@ public class SettingActivity extends AppCompatActivity implements FragmentChange
     private String CURRENTTABTAG,emailOptIn;
     ScrollView scrollView;
     private Switch emailOptInSwitch;TextView title;
+    @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -83,7 +69,12 @@ public class SettingActivity extends AppCompatActivity implements FragmentChange
 
 // finally change the color
         window.setStatusBarColor(ContextCompat.getColor(this, R.color.purp));
-        if (savedInstanceState == null) {
+
+        if (getIntent().getStringExtra("screen").equalsIgnoreCase("report"))
+        {
+            getSupportFragmentManager().beginTransaction().replace(R.id.flContent, ReportUserFragment.newInstance(getIntent().getStringExtra("userId"))).commit();
+        }
+        else  {
             getSupportFragmentManager().beginTransaction().replace(R.id.flContent, new SettingsFragment()).commit();
         }
 

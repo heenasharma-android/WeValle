@@ -418,19 +418,19 @@ public class ProfileFragment extends BaseFragment implements
 
     }
 
-    private void reportUser() {
-
-
-        Bundle bundle = new Bundle();
-        bundle.putString(AlbanianConstants.EXTRA_PROFILEVISITEDID, profileVisitedID);
-        bundle.putString(AlbanianConstants.EXTRA_CURRENTTAB_TAG, CURRENTTABTAG);
-
-
-        mActivity.pushFragments(CURRENTTABTAG,
-                new ReportUserFragment(), false, true, bundle);
-
-
-    }
+//    private void reportUser() {
+//
+//
+//        Bundle bundle = new Bundle();
+//        bundle.putString(AlbanianConstants.EXTRA_PROFILEVISITEDID, profileVisitedID);
+//        bundle.putString(AlbanianConstants.EXTRA_CURRENTTAB_TAG, CURRENTTABTAG);
+//
+//
+//        mActivity.pushFragments(CURRENTTABTAG,
+//                new ReportUserFragment(), false, true, bundle);
+//
+//
+//    }
 
     private void addToFavorite() {
 
@@ -735,7 +735,7 @@ public class ProfileFragment extends BaseFragment implements
                         } else if (strName == 1) {
                             // comment report
 
-                            reportUser();
+                            //reportUser();
 
                         } else if (strName == 2) {
                             // comment report

@@ -4,6 +4,7 @@ import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.os.Bundle;
+import android.support.v4.app.Fragment;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -34,7 +35,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 
-public class ReportUserFragment extends BaseFragment implements
+public class ReportUserFragment extends Fragment implements
         View.OnClickListener{
 
     /*UI declaration*/
@@ -54,8 +55,16 @@ public class ReportUserFragment extends BaseFragment implements
 
     private AlbanianPreferances pref;
     private String profileVisitedID,CURRENTTABTAG;
+String userId;
+    public String str_reason/*,str_action*/;
 
-    private String str_reason/*,str_action*/;
+    public static ReportUserFragment newInstance(String parameter) {
+        Bundle args = new Bundle();
+        args.putString("parameter", parameter);
+        ReportUserFragment fragment = new ReportUserFragment();
+        fragment.setArguments(args);
+        return fragment;
+    }
 
 
     @Override
@@ -83,6 +92,9 @@ public class ReportUserFragment extends BaseFragment implements
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
 
+        if (getArguments() != null) {
+            userId = getArguments().getString("parameter");
+        }
 
         if(mView!=null)
         {
@@ -131,7 +143,7 @@ public class ReportUserFragment extends BaseFragment implements
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
 
-                str_reason = reasonsList.get(position).toString();
+                str_reason = reasonsList.get(position);
             }
 
             @Override
@@ -200,7 +212,7 @@ public class ReportUserFragment extends BaseFragment implements
                 params.put("spam_reason", str_reason);
 //                params.put("spam_action", str_action);
                 params.put("spam_detail", details.getText().toString().trim());
-                params.put("criminal_id", profileVisitedID);
+                params.put("criminal_id", userId);
                 params.put("AppName", AlbanianConstants.AppName);
 
                 return params;
@@ -290,8 +302,17 @@ public class ReportUserFragment extends BaseFragment implements
         {
             case R.id.btn_submitreport:
 
-                validateForm();
+                String mTitle = getResources().getString(R.string.app_name);
+                if (str_reason==null) {
+                    String mMessage = getString(R.string.Signup_Pleasefillreason);
+                    AlbanianApplication.ShowAlert(getActivity(), mTitle, mMessage, false);
+                }
+                else {
+                    Log.d("sumit", "reason value= " + str_reason);
+                    reportUser(str_reason,"");
 
+
+                }
 
                 break;
 
@@ -315,38 +336,24 @@ public class ReportUserFragment extends BaseFragment implements
     private void validateForm() {
 
 
-        try {
-            AlbanianApplication.hideKeyBoard(getActivity(), getActivity());
-
-
-
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
+//        try {
+//            AlbanianApplication.hideKeyBoard(getActivity(), getActivity());
+//
+//
+//
+//        } catch (Exception e) {
+//            e.printStackTrace();
+//        }
 
         //// validate date
 
         String mTitle = getResources().getString(R.string.app_name);
-
-
-
-         if (str_reason.length() <= 0) {
-
+         if (str_reason.length() == 0) {
             String mMessage = getString(R.string.Signup_Pleasefillreason);
             AlbanianApplication.ShowAlert(getActivity(), mTitle, mMessage, false);
         }
-//        else if (str_action.length() <= 0) {
-//
-//            String mMessage = getString(R.string.Signup_Pleasefillaction);
-//            AlbanianApplication.ShowAlert(getActivity(), mTitle, mMessage, false);
-//        }
         else {
-
-
             Log.d("sumit", "reason value= " + str_reason);
-//            Log.d("sumit", "action value= " + str_action);
-
-
             reportUser(str_reason,"");
 
 

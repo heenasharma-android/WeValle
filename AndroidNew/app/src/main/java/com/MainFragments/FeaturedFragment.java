@@ -126,7 +126,7 @@ public class FeaturedFragment extends Fragment {
                             international.setImageUrl(jsonObject.getString("UserImageUrl"));
                             international.setUnit(jsonObject.getString("Unit"));
                             international.setDistance(jsonObject.getString("MilesDistance"));
-                            //international.setPhoto(photoLists);
+                            international.setPhoto(photoLists);
                             internationals.add(international);
                             LinearLayoutManager llm = new LinearLayoutManager(getContext());
                             llm.setOrientation(LinearLayoutManager.HORIZONTAL);
