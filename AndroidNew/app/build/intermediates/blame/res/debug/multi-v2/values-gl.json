@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "F:\\AndroidNew\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-gl\\values-gl.xml",
+            "outputFile": "C:\\Users\\dikhong\\Documents\\GitHub\\WeValle\\AndroidNew\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-gl\\values-gl.xml",
             "map": [
                 {
                     "source": "C:\\Users\\dikhong\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-cast-framework-11.8.0.aar\\0eb9fd0c460f0a8dab51ecda6de997b8\\res\\values-gl\\values.xml",

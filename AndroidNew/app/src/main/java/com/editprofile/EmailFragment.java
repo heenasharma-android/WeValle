@@ -1,6 +1,7 @@
 package com.editprofile;
 
 import android.os.Bundle;
+import android.support.v4.app.Fragment;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -9,7 +10,6 @@ import android.widget.EditText;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
-import com.MainFragments.BaseFragment;
 import com.albaniancircle.AlbanianApplication;
 import com.albaniancircle.AlbanianConstants;
 import com.albaniancircle.AlbanianPreferances;
@@ -29,16 +29,13 @@ import java.util.regex.Matcher;
 /**
  * Created by Sumit on 9/24/2015.
  */
-public class EmailFragment extends BaseFragment implements View.OnClickListener{
+public class EmailFragment extends Fragment implements View.OnClickListener{
 
     private View mView;
     private TextView tvTitle, tvSave, tvCancel;
     private EditText edtOldEmail, edtNewEmail, edtVerifyEmail;
     private RelativeLayout save;
-
-
 //    Variables  /////
-
     private String str_oldemail,str_newemail,str_verifyemail;
     private AlbanianPreferances pref;
 
@@ -87,7 +84,7 @@ public class EmailFragment extends BaseFragment implements View.OnClickListener{
 
             case R.id.tv_cancel:
 
-                mActivity.onBackPressed();
+                getActivity().onBackPressed();
                 break;
         }
     }
@@ -232,7 +229,7 @@ public class EmailFragment extends BaseFragment implements View.OnClickListener{
 //                        AlbanianApplication.ShowAlert(getActivity(), mTitle,
 //                                ErrorMessage, false);
 
-                        mActivity.onBackPressed();
+                        getActivity().onBackPressed();
 
 
                     } else if (ErrorCode.equals("0")) {

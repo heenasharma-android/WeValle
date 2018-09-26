@@ -173,8 +173,6 @@ String userId;
 
     private void reportUser(final String str_reason, final String str_action) {
 
-
-
         AlbanianApplication.showProgressDialog(getActivity(), "", "Loading...");
 
         StringRequest sr = new StringRequest(Request.Method.POST, AlbanianConstants.base_url , new Response.Listener<String>() {
@@ -206,7 +204,6 @@ String userId;
             protected Map<String, String> getParams()
             {
                 Map<String, String> params = new HashMap<String, String>();
-
                 params.put("api_name", "reportspam");
                 params.put("self_user_id", pref.getUserData().getUserId());
                 params.put("spam_reason", str_reason);

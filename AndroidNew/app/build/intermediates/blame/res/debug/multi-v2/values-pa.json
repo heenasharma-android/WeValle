@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "F:\\AndroidNew\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-pa\\values-pa.xml",
+            "outputFile": "C:\\Users\\dikhong\\Documents\\GitHub\\WeValle\\AndroidNew\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-pa\\values-pa.xml",
             "map": [
                 {
                     "source": "C:\\Users\\dikhong\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-basement-11.8.0.aar\\0bfcd30f37ee42fbed3d6995be2631f7\\res\\values-pa\\values.xml",

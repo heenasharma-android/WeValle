@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "F:\\AndroidNew\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-zh\\values-zh.xml",
+            "outputFile": "C:\\Users\\dikhong\\Documents\\GitHub\\WeValle\\AndroidNew\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-zh\\values-zh.xml",
             "map": [
                 {
                     "source": "C:\\Users\\dikhong\\.gradle\\caches\\transforms-1\\files-1.1\\stripe-android-4.1.3.aar\\1d16978b678abe1f0d3252eb17def472\\res\\values-zh\\values-zh.xml",

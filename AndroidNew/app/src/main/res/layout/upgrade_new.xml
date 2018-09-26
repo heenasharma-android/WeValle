@@ -54,7 +54,7 @@
                 android:layout_height="wrap_content"
                 android:layout_width="fill_parent"
                 app:radius="3dp"
-                app:fillColor="#ff0400"
+                app:fillColor="@color/purp"
                 app:pageColor="#000000"
                 app:strokeColor="#00000000"
                 app:strokeWidth="1dp"
@@ -166,7 +166,7 @@
 
                             android:gravity="center_horizontal"
                             android:text="Save $60.00"
-                            android:textColor="@color/buttoncolor"
+                            android:textColor="@color/purp"
                             android:textSize="13sp" />
 
                     </LinearLayout>
@@ -318,7 +318,7 @@
                             android:layout_marginTop="2dp"
                             android:gravity="center_horizontal"
                             android:text="Save $18.00"
-                            android:textColor="@color/buttoncolor"
+                            android:textColor="@color/purp"
                             android:textSize="13sp" />
 
 

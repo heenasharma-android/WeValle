@@ -30,7 +30,6 @@ import com.android.volley.VolleyLog;
 import com.android.volley.toolbox.StringRequest;
 import com.editprofile.EmailFragment;
 import com.editprofile.PasswordFragment;
-import com.editprofile.UsernameFragment;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -341,6 +340,9 @@ public class SettingsFragment extends Fragment implements View.OnClickListener {
 //
 //                mActivity.pushFragments(CURRENTTABTAG,
 //                        new EmailFragment(), false, true, bundle);
+                Fragment f1 = new EmailFragment();
+                FragmentChangeListener f2 = (FragmentChangeListener) getActivity();
+                f2.replaceFragment(f1, "Email");
 
                 break;
 

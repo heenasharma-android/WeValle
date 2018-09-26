@@ -1,33 +1,33 @@
 -- Merging decision tree log ---
 manifest
-ADDED from F:\AndroidNew\CropImage\src\main\AndroidManifest.xml:1:1-7:12
-INJECTED from F:\AndroidNew\CropImage\src\main\AndroidManifest.xml:1:1-7:12
-INJECTED from F:\AndroidNew\CropImage\src\main\AndroidManifest.xml:1:1-7:12
-INJECTED from F:\AndroidNew\CropImage\src\main\AndroidManifest.xml:1:1-7:12
-INJECTED from F:\AndroidNew\CropImage\src\main\AndroidManifest.xml:1:1-7:12
-INJECTED from F:\AndroidNew\CropImage\src\main\AndroidManifest.xml:1:1-7:12
-INJECTED from F:\AndroidNew\CropImage\src\main\AndroidManifest.xml:1:1-7:12
+ADDED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\CropImage\src\main\AndroidManifest.xml:1:1-7:12
+INJECTED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\CropImage\src\main\AndroidManifest.xml:1:1-7:12
+INJECTED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\CropImage\src\main\AndroidManifest.xml:1:1-7:12
+INJECTED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\CropImage\src\main\AndroidManifest.xml:1:1-7:12
+INJECTED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\CropImage\src\main\AndroidManifest.xml:1:1-7:12
+INJECTED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\CropImage\src\main\AndroidManifest.xml:1:1-7:12
+INJECTED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\CropImage\src\main\AndroidManifest.xml:1:1-7:12
 	package
-		ADDED from F:\AndroidNew\CropImage\src\main\AndroidManifest.xml:2:5-33
-		INJECTED from F:\AndroidNew\CropImage\src\main\AndroidManifest.xml
-		INJECTED from F:\AndroidNew\CropImage\src\main\AndroidManifest.xml
+		ADDED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\CropImage\src\main\AndroidManifest.xml:2:5-33
+		INJECTED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\CropImage\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\CropImage\src\main\AndroidManifest.xml
 	android:versionName
-		ADDED from F:\AndroidNew\CropImage\src\main\AndroidManifest.xml:4:5-32
-		INJECTED from F:\AndroidNew\CropImage\src\main\AndroidManifest.xml
-		INJECTED from F:\AndroidNew\CropImage\src\main\AndroidManifest.xml
+		ADDED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\CropImage\src\main\AndroidManifest.xml:4:5-32
+		INJECTED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\CropImage\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\CropImage\src\main\AndroidManifest.xml
 	xmlns:android
-		ADDED from F:\AndroidNew\CropImage\src\main\AndroidManifest.xml:1:11-69
+		ADDED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\CropImage\src\main\AndroidManifest.xml:1:11-69
 	android:versionCode
-		ADDED from F:\AndroidNew\CropImage\src\main\AndroidManifest.xml:3:5-28
-		INJECTED from F:\AndroidNew\CropImage\src\main\AndroidManifest.xml
-		INJECTED from F:\AndroidNew\CropImage\src\main\AndroidManifest.xml
+		ADDED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\CropImage\src\main\AndroidManifest.xml:3:5-28
+		INJECTED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\CropImage\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\CropImage\src\main\AndroidManifest.xml
 uses-sdk
-ADDED from F:\AndroidNew\CropImage\src\main\AndroidManifest.xml:6:5-74
-INJECTED from F:\AndroidNew\CropImage\src\main\AndroidManifest.xml:6:5-74
-INJECTED from F:\AndroidNew\CropImage\src\main\AndroidManifest.xml:6:5-74
+ADDED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\CropImage\src\main\AndroidManifest.xml:6:5-74
+INJECTED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\CropImage\src\main\AndroidManifest.xml:6:5-74
+INJECTED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\CropImage\src\main\AndroidManifest.xml:6:5-74
 	android:targetSdkVersion
-		ADDED from F:\AndroidNew\CropImage\src\main\AndroidManifest.xml:6:42-71
+		ADDED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\CropImage\src\main\AndroidManifest.xml:6:42-71
 	android:minSdkVersion
-		ADDED from F:\AndroidNew\CropImage\src\main\AndroidManifest.xml:6:15-41
-		INJECTED from F:\AndroidNew\CropImage\src\main\AndroidManifest.xml
-		INJECTED from F:\AndroidNew\CropImage\src\main\AndroidManifest.xml
+		ADDED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\CropImage\src\main\AndroidManifest.xml:6:15-41
+		INJECTED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\CropImage\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\CropImage\src\main\AndroidManifest.xml

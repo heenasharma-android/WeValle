@@ -5,14 +5,16 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
 import android.net.Uri;
+import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
+import android.support.annotation.RequiresApi;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentPagerAdapter;
+import android.support.v4.app.FragmentStatePagerAdapter;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v4.content.ContextCompat;
 import android.support.v4.view.ViewPager;
@@ -92,12 +94,13 @@ public class HomeFragmentNewActivity extends LocationManagerFragmentActivity imp
     private Handler mHandler;
     public static boolean fabVisible;
     FloatingActionButton fab1,fab2;
-
+    ViewPagerAdapter viewPagerAdapter;
     public void setFragmentRefreshListener(FragmentRefreshListener fragmentRefreshListener) {
         this.fragmentRefreshListener = fragmentRefreshListener;
     }
 
 
+    @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -195,6 +198,7 @@ public class HomeFragmentNewActivity extends LocationManagerFragmentActivity imp
                         fabVisible = false;
                         break;
                 }
+                viewPagerAdapter.notifyDataSetChanged();
             }
 
             @Override
@@ -259,17 +263,20 @@ public class HomeFragmentNewActivity extends LocationManagerFragmentActivity imp
 
 
     private void setupViewPager(ViewPager viewPager) {
-        ViewPagerAdapter adapter = new ViewPagerAdapter(getSupportFragmentManager());
-        adapter.addFragment(new SearchNewFragment(), "PEOPLE");
-        adapter.addFragment(new FeaturedFragment(), "FEATURED");
-        adapter.addFragment(new PlaceTabFragment(), "PLACES");
-        viewPager.setAdapter(adapter);
+        viewPagerAdapter = new ViewPagerAdapter(getSupportFragmentManager());
+        viewPagerAdapter.addFragment(new SearchNewFragment(), "PEOPLE");
+        viewPagerAdapter.addFragment(new FeaturedFragment(), "FEATURED");
+        viewPagerAdapter.addFragment(new PlaceTabFragment(), "PLACES");
+        viewPager.setAdapter(viewPagerAdapter);
     }
 
     @Override
     public void onFragmentInteraction(Uri uri) {
 
     }
+
+
+
 
     @Override
     public void onPlaceSelected(Place place) {
@@ -292,7 +299,7 @@ public class HomeFragmentNewActivity extends LocationManagerFragmentActivity imp
 
     }
 
-    class ViewPagerAdapter extends FragmentPagerAdapter {
+    class ViewPagerAdapter extends FragmentStatePagerAdapter {
         private final List<Fragment> mFragmentList = new ArrayList<>();
         private final List<String> mFragmentTitleList = new ArrayList<>();
 
@@ -308,6 +315,11 @@ public class HomeFragmentNewActivity extends LocationManagerFragmentActivity imp
         @Override
         public int getCount() {
             return mFragmentList.size();
+        }
+
+        @Override
+        public int getItemPosition(Object object) {
+            return POSITION_NONE;
         }
 
         public void addFragment(Fragment fragment, String title) {
@@ -447,7 +459,7 @@ public class HomeFragmentNewActivity extends LocationManagerFragmentActivity imp
     @Override
     protected void onResume() {
         super.onResume();
-
+        viewPagerAdapter.notifyDataSetChanged();
         getMessageCount();
 
         registerReceiver(mChatMessageReceiver, new IntentFilter(

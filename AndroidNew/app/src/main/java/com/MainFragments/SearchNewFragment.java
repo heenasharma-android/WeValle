@@ -10,9 +10,13 @@ import android.content.IntentSender;
 import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
 import android.location.Location;
+import android.net.Uri;
+import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.annotation.NonNull;
+import android.support.annotation.Nullable;
+import android.support.annotation.RequiresApi;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.content.ContextCompat;
@@ -95,6 +99,7 @@ public class SearchNewFragment extends LocationFragment implements View.OnClickL
     private RelativeLayout locationLayout_main;
     private LinearLayout locationLayout_inner;
     private SearchView userSearchView;
+    String placeName;
 
     /* Variables...... */
 
@@ -151,7 +156,6 @@ public class SearchNewFragment extends LocationFragment implements View.OnClickL
 //    private MapView mMapView;
 //    private GoogleMap googleMap;
 //    private SwipeRefreshLayout swipeContainer;
-
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -508,7 +512,7 @@ public class SearchNewFragment extends LocationFragment implements View.OnClickL
                 gridUserimages_Country.setVisibility(View.VISIBLE);
 //                swipeContainer.setVisibility(View.GONE);
 
-                searchUsersByName(query.toString());
+                //searchUsersByName(query.toString());
 
                 return false;
             }
@@ -582,7 +586,9 @@ public class SearchNewFragment extends LocationFragment implements View.OnClickL
 
                 if (AlbanianApplication.isInternetOn(getActivity())) {
 
-                    {getUserNearby("0",place.getName().toString());
+                    {
+
+                        getUserNearby("0",place.getName().toString());
                          // 0 for google address
                     }
 
@@ -766,7 +772,6 @@ public class SearchNewFragment extends LocationFragment implements View.OnClickL
 
 
     private void parseResponse(String Result,String apiName,String selectedlocation,String updateaddress) {
-
 //        if (apiname.equals("usersearch")) {
 //
 //            onlinesearcheduser_arraylist.clear();
@@ -1053,10 +1058,9 @@ public class SearchNewFragment extends LocationFragment implements View.OnClickL
     public void onRefresh(String lat, String lng,Place place) {
         mLatitude=lat;
         mLongitude=lng;
+        placeName=place.getName().toString();
         getUserNearby("0",place.getName().toString());
-
         }
-
 
     ///////spinner adapter for country
 
@@ -1180,27 +1184,22 @@ public class SearchNewFragment extends LocationFragment implements View.OnClickL
     }
 
 
+    @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     private void getUserNearby(String updateaddress, String selectedlocation) {
-
+        AlbanianApplication.hideProgressDialog(getActivity());
         gridUserimages_Country.setVisibility(View.VISIBLE);
 //        swipeContainer.setVisibility(View.VISIBLE);
         locationLayout_main.setVisibility(View.GONE);
-
-       // AlbanianApplication.showProgressDialog(getActivity(), "", "Loading...");
-
+        AlbanianApplication.showProgressDialog(getActivity(), "", "Loading...");
 
         StringRequest sr = new StringRequest(Request.Method.POST, AlbanianConstants.base_url , new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {
                 Log.d(AlbanianConstants.TAG, "user locals= " + response.toString());
-
-                AlbanianApplication.hideProgressDialog(getActivity());
-
-
 //                swipeContainer.setRefreshing(false);
-
-
 //                localFlag=false;
+               AlbanianApplication.hideProgressDialog(getActivity());
+
                 parseResponse(response.toString(),"getlocalsaroundme",selectedlocation,updateaddress);
 
 //                addMarker(Double.parseDouble(mLatitude),Double.parseDouble(mLongitude));
@@ -1219,9 +1218,6 @@ public class SearchNewFragment extends LocationFragment implements View.OnClickL
 
                 VolleyLog.d(AlbanianConstants.TAG, "user locals Error: " + error.getMessage());
                 Log.d(AlbanianConstants.TAG, "" + error.getMessage() + "," + error.toString());
-
-
-
             }
         })
 
@@ -1262,14 +1258,13 @@ public class SearchNewFragment extends LocationFragment implements View.OnClickL
     private void searchUsersByName(final String userName ){
 
         AlbanianApplication.getInstance().cancelPendingRequests("SearchUserName");
-        AlbanianApplication.hideProgressDialog(getActivity());
+        //AlbanianApplication.hideProgressDialog(getActivity());
 
 
         Log.d("sumit", "userName name= " + userName);
         Log.d("sumit", "user_id name= " + pref.getUserData().getUserId());
 
-        AlbanianApplication.showProgressDialog(getActivity(), "",
-                "Loading...");
+        //AlbanianApplication.showProgressDialog(getActivity(), "","Loading...");
 
 
 
@@ -1277,7 +1272,7 @@ public class SearchNewFragment extends LocationFragment implements View.OnClickL
             @Override
             public void onResponse(String response) {
                 Log.d(AlbanianConstants.TAG, "getuserbycountry= " + response.toString());
-                AlbanianApplication.hideProgressDialog(getActivity());
+              //  AlbanianApplication.hideProgressDialog(getActivity());
 
                 gridUserimages_Country.setVisibility(View.VISIBLE);
 //                swipeContainer.setVisibility(View.VISIBLE);
@@ -1293,7 +1288,8 @@ public class SearchNewFragment extends LocationFragment implements View.OnClickL
                 VolleyLog.d(AlbanianConstants.TAG, "getuserbycountry Error: " + error.getMessage());
                 Log.d(AlbanianConstants.TAG, "" + error.getMessage() + "," + error.toString());
 
-                AlbanianApplication.hideProgressDialog(getActivity());
+              //
+                //  AlbanianApplication.hideProgressDialog(getActivity());
 
             }
         })
@@ -1551,5 +1547,8 @@ public class SearchNewFragment extends LocationFragment implements View.OnClickL
         AlbanianApplication.getInstance().addToRequestQueue(sr);
 
     }
+
+
+
 
 }

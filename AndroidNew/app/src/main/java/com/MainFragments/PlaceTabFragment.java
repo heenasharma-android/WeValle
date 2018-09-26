@@ -49,7 +49,7 @@ public class PlaceTabFragment extends Fragment {
     List<Detail> listitems;
     AlbanianPreferances pref;
 
-    private OnFragmentInteractionListener mListener;
+    public OnFragmentInteractionListener mListener;
 
     public PlaceTabFragment() {
         // Required empty public constructor
@@ -77,9 +77,9 @@ public class PlaceTabFragment extends Fragment {
     }
 
     public void sendJsonRequest() {
-        AlbanianApplication.showProgressDialog(getContext(),"","Loading..");
+        AlbanianApplication.showProgressDialog(getActivity(),"","Loading..");
         String webAddress = "http://culturalsinglesapps.com/WeValleAPICalls.php";
-        RequestQueue queue = Volley.newRequestQueue(getContext());
+        RequestQueue queue = Volley.newRequestQueue(getActivity());
 
         JSONObject object = new JSONObject();
 
@@ -98,7 +98,7 @@ public class PlaceTabFragment extends Fragment {
 
             @Override
             public void onResponse(JSONObject response) {
-                AlbanianApplication.hideProgressDialog(getContext());
+                AlbanianApplication.hideProgressDialog(getActivity());
                 Log.d("RESPONSE", response.toString());
 
                 try {
@@ -175,8 +175,8 @@ public class PlaceTabFragment extends Fragment {
         }, new com.android.volley.Response.ErrorListener() {
             @Override
             public void onErrorResponse(VolleyError error) {
-                AlbanianApplication.hideProgressDialog(getContext());
-                Toast.makeText(getContext(),error.toString().trim(),Toast.LENGTH_LONG).show();
+                AlbanianApplication.hideProgressDialog(getActivity());
+                Toast.makeText(getActivity(),error.toString().trim(),Toast.LENGTH_LONG).show();
             }
         });
         queue.add(request); }

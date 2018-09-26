@@ -4,6 +4,9 @@
     <string name="app_name">WeValle</string>
     <string name="WeValle">WeValle</string>
     <string name="monthplan">Month\nplan</string>
+    <string name="host_internet">No Internet Connection</string>
+    <string name="go_to_settings">Go To Settings</string>
+    <string name="retry">Please Retry</string>
     <string name="Login">LOG IN</string>
     <string name="Register">REGISTER</string>
     <string name="ForgotPassword">Forgot your password?</string>

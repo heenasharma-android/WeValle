@@ -1,31 +1,31 @@
 -- Merging decision tree log ---
 manifest
-ADDED from F:\AndroidNew\library\src\main\AndroidManifest.xml:3:1-9:12
-INJECTED from F:\AndroidNew\library\src\main\AndroidManifest.xml:3:1-9:12
-INJECTED from F:\AndroidNew\library\src\main\AndroidManifest.xml:3:1-9:12
-INJECTED from F:\AndroidNew\library\src\main\AndroidManifest.xml:3:1-9:12
-INJECTED from F:\AndroidNew\library\src\main\AndroidManifest.xml:3:1-9:12
-INJECTED from F:\AndroidNew\library\src\main\AndroidManifest.xml:3:1-9:12
-INJECTED from F:\AndroidNew\library\src\main\AndroidManifest.xml:3:1-9:12
+ADDED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\library\src\main\AndroidManifest.xml:3:1-9:12
+INJECTED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\library\src\main\AndroidManifest.xml:3:1-9:12
+INJECTED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\library\src\main\AndroidManifest.xml:3:1-9:12
+INJECTED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\library\src\main\AndroidManifest.xml:3:1-9:12
+INJECTED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\library\src\main\AndroidManifest.xml:3:1-9:12
+INJECTED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\library\src\main\AndroidManifest.xml:3:1-9:12
+INJECTED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\library\src\main\AndroidManifest.xml:3:1-9:12
 	package
-		ADDED from F:\AndroidNew\library\src\main\AndroidManifest.xml:4:5-37
-		INJECTED from F:\AndroidNew\library\src\main\AndroidManifest.xml
-		INJECTED from F:\AndroidNew\library\src\main\AndroidManifest.xml
+		ADDED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\library\src\main\AndroidManifest.xml:4:5-37
+		INJECTED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\library\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\library\src\main\AndroidManifest.xml
 	android:versionName
-		ADDED from F:\AndroidNew\library\src\main\AndroidManifest.xml:6:5-32
-		INJECTED from F:\AndroidNew\library\src\main\AndroidManifest.xml
-		INJECTED from F:\AndroidNew\library\src\main\AndroidManifest.xml
+		ADDED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\library\src\main\AndroidManifest.xml:6:5-32
+		INJECTED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\library\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\library\src\main\AndroidManifest.xml
 	xmlns:android
-		ADDED from F:\AndroidNew\library\src\main\AndroidManifest.xml:3:11-69
+		ADDED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\library\src\main\AndroidManifest.xml:3:11-69
 	android:versionCode
-		ADDED from F:\AndroidNew\library\src\main\AndroidManifest.xml:5:5-29
-		INJECTED from F:\AndroidNew\library\src\main\AndroidManifest.xml
-		INJECTED from F:\AndroidNew\library\src\main\AndroidManifest.xml
+		ADDED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\library\src\main\AndroidManifest.xml:5:5-29
+		INJECTED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\library\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\library\src\main\AndroidManifest.xml
 uses-sdk
-ADDED from F:\AndroidNew\library\src\main\AndroidManifest.xml:8:5-43
-INJECTED from F:\AndroidNew\library\src\main\AndroidManifest.xml:8:5-43
-INJECTED from F:\AndroidNew\library\src\main\AndroidManifest.xml:8:5-43
+ADDED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\library\src\main\AndroidManifest.xml:8:5-43
+INJECTED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\library\src\main\AndroidManifest.xml:8:5-43
+INJECTED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\library\src\main\AndroidManifest.xml:8:5-43
 	android:minSdkVersion
-		ADDED from F:\AndroidNew\library\src\main\AndroidManifest.xml:8:15-40
-		INJECTED from F:\AndroidNew\library\src\main\AndroidManifest.xml
-		INJECTED from F:\AndroidNew\library\src\main\AndroidManifest.xml
+		ADDED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\library\src\main\AndroidManifest.xml:8:15-40
+		INJECTED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\library\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\library\src\main\AndroidManifest.xml

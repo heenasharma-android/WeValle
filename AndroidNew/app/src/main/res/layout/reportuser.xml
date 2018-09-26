@@ -8,7 +8,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="48dp"
-        android:background="@color/buttoncolor"
+        android:background="@color/purp"
         android:gravity="center"
         android:orientation="horizontal">
 
@@ -215,7 +215,7 @@
                     android:layout_marginBottom="10dp"
                     android:layout_marginRight="5dp"
                     android:layout_weight="1"
-                    android:background="@color/buttoncolor"
+                    android:background="@color/purp"
                     android:gravity="center"
                     android:text="@string/camera_cancel"
                     android:textAllCaps="false"
@@ -231,7 +231,7 @@
                     android:layout_marginBottom="10dp"
                     android:layout_marginLeft="5dp"
                     android:layout_weight="1"
-                    android:background="@color/buttoncolor"
+                    android:background="@color/purp"
                     android:gravity="center"
                     android:text="@string/Submit"
                     android:textAllCaps="false"

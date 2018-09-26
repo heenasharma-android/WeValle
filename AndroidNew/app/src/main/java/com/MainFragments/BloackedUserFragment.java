@@ -1,5 +1,6 @@
 package com.MainFragments;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.util.Log;
@@ -11,6 +12,7 @@ import android.widget.ListView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
+import com.OldScreens.NewProfileActivity;
 import com.adapter.WhoIViewedAdapter;
 import com.albaniancircle.AlbanianApplication;
 import com.albaniancircle.AlbanianConstants;
@@ -323,6 +325,9 @@ public class BloackedUserFragment extends Fragment implements View.OnClickListen
 
 
     private void loadProfile(String userId) {
+        Intent intent=new Intent(getActivity(), NewProfileActivity.class);
+        intent.putExtra("userId",userId);
+        startActivity(intent);
 
 
 //        Bundle bundle=new Bundle();
