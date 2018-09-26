@@ -198,7 +198,6 @@ public class HomeFragmentNewActivity extends LocationManagerFragmentActivity imp
                         fabVisible = false;
                         break;
                 }
-                viewPagerAdapter.notifyDataSetChanged();
             }
 
             @Override
