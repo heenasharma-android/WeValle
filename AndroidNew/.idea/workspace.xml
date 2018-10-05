@@ -68,8 +68,13 @@
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/MainFragments/BloackedUserFragment.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="357">
-              <caret line="157" column="19" lean-forward="true" selection-start-line="157" selection-start-column="19" selection-end-line="157" selection-end-column="19" />
-              <folding />
+              <caret line="157" column="19" lean-forward="false" selection-start-line="157" selection-start-column="19" selection-end-line="157" selection-end-column="19" />
+              <folding>
+                <element signature="e#2801#2842#0" expanded="true" />
+                <element signature="e#4236#4252#0" expanded="true" />
+                <element signature="e#5175#5218#0" expanded="true" />
+                <element signature="e#7883#7926#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -7171,8 +7176,13 @@
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/MainFragments/BloackedUserFragment.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
-          <caret line="157" column="19" lean-forward="true" selection-start-line="157" selection-start-column="19" selection-end-line="157" selection-end-column="19" />
-          <folding />
+          <caret line="157" column="19" lean-forward="false" selection-start-line="157" selection-start-column="19" selection-end-line="157" selection-end-column="19" />
+          <folding>
+            <element signature="e#2801#2842#0" expanded="true" />
+            <element signature="e#4236#4252#0" expanded="true" />
+            <element signature="e#5175#5218#0" expanded="true" />
+            <element signature="e#7883#7926#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
