@@ -69,12 +69,7 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="357">
               <caret line="157" column="19" lean-forward="false" selection-start-line="157" selection-start-column="19" selection-end-line="157" selection-end-column="19" />
-              <folding>
-                <element signature="e#2801#2842#0" expanded="true" />
-                <element signature="e#4236#4252#0" expanded="true" />
-                <element signature="e#5175#5218#0" expanded="true" />
-                <element signature="e#7883#7926#0" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -6465,7 +6460,7 @@
   <component name="PropertiesComponent">
     <property name="android.sdk.path" value="C:/Android/Android/sdk" />
     <property name="settings.editor.selected.configurable" value="android.sdk-updates" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/youtube.png" />
+    <property name="last_opened_file_path" value="F:/EasyFlipView-master" />
     <property name="device.picker.selection" value="6f586af6" />
     <property name="android.profiler.active" value="true" />
     <property name="SearchEverywhereHistoryKey" value="SPLA&#9;PSI&#9;JAVA://com.albaniancircle.Splash" />
@@ -6656,7 +6651,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info id="Android Profiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32843137" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -7177,12 +7171,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
           <caret line="157" column="19" lean-forward="false" selection-start-line="157" selection-start-column="19" selection-end-line="157" selection-end-column="19" />
-          <folding>
-            <element signature="e#2801#2842#0" expanded="true" />
-            <element signature="e#4236#4252#0" expanded="true" />
-            <element signature="e#5175#5218#0" expanded="true" />
-            <element signature="e#7883#7926#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
