@@ -167,6 +167,7 @@
         <activity android:name="com.OldScreens.EditProfile" />
         <activity android:name="com.OldScreens.ProfessionActivity" />
         <activity android:name="com.MainFragments.SlideActivity" />
+        <activity android:name="com.OldScreens.WebviewActivity" />
 
         <receiver android:name="com.google.android.gms.cast.framework.media.MediaIntentReceiver" />
 

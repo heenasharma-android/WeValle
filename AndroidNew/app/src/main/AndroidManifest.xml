@@ -154,6 +154,7 @@
         <activity android:name="com.OldScreens.EditProfile" />
         <activity android:name="com.OldScreens.ProfessionActivity" />
         <activity android:name="com.MainFragments.SlideActivity"></activity>
+        <activity android:name="com.OldScreens.WebviewActivity"></activity>
     </application>
 
 </manifest>

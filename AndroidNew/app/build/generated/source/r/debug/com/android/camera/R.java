@@ -58,12 +58,12 @@ public final class R {
         public static final int details_whitebalance_value = 0x7f0900ac;
         public static final int discard = 0x7f0900b0;
         public static final int image = 0x7f090103;
-        public static final int save = 0x7f09020f;
-        public static final int scroll_view = 0x7f090215;
+        public static final int save = 0x7f090210;
+        public static final int scroll_view = 0x7f090216;
     }
     public static final class layout {
-        public static final int cropimage = 0x7f0c003e;
-        public static final int detailsview = 0x7f0c004e;
+        public static final int cropimage = 0x7f0c003f;
+        public static final int detailsview = 0x7f0c004f;
     }
     public static final class string {
         public static final int all_images = 0x7f10005e;

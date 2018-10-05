@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml:2:1-159:12
-INJECTED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml:2:1-159:12
-INJECTED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml:2:1-159:12
-INJECTED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml:2:1-159:12
+ADDED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml:2:1-160:12
+INJECTED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml:2:1-160:12
+INJECTED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml:2:1-160:12
+INJECTED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml:2:1-160:12
 MERGED from [com.android.support:multidex:1.0.3] C:\Users\dikhong\.gradle\caches\transforms-1\files-1.1\multidex-1.0.3.aar\f18d9cf10782f5342d7391e095874290\AndroidManifest.xml:17:1-22:12
 MERGED from [com.stripe:stripe-android:4.1.3] C:\Users\dikhong\.gradle\caches\transforms-1\files-1.1\stripe-android-4.1.3.aar\1d16978b678abe1f0d3252eb17def472\AndroidManifest.xml:2:1-11:12
 MERGED from [com.android.support:design:25.1.0] C:\Users\dikhong\.gradle\caches\transforms-1\files-1.1\design-25.1.0.aar\31b3d6e6348153ee8cda345dc5f93d77\AndroidManifest.xml:17:1-27:12
@@ -137,20 +137,20 @@ MERGED from [com.google.android.gms:play-services-vision-license:11.8.0] C:\User
 MERGED from [com.google.android.gms:play-services-wallet-license:11.8.0] C:\Users\dikhong\.gradle\caches\transforms-1\files-1.1\play-services-wallet-license-11.8.0.aar\221df45fbf9efaafdcf0f784cb29be36\AndroidManifest.xml:2:1-6:12
 MERGED from [com.google.android.gms:play-services-wearable-license:11.8.0] C:\Users\dikhong\.gradle\caches\transforms-1\files-1.1\play-services-wearable-license-11.8.0.aar\83b2a5105318663f1d155157e6147243\AndroidManifest.xml:2:1-6:12
 MERGED from [com.google.android.gms:play-services-analytics-license:11.8.0] C:\Users\dikhong\.gradle\caches\transforms-1\files-1.1\play-services-analytics-license-11.8.0.aar\7c387f315a48741aadb55df1736ca744\AndroidManifest.xml:2:1-6:12
-INJECTED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml:2:1-159:12
-INJECTED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml:2:1-159:12
-INJECTED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml:2:1-159:12
+INJECTED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml:2:1-160:12
+INJECTED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml:2:1-160:12
+INJECTED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml:2:1-160:12
 	package
 		ADDED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml:3:5-33
 		INJECTED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml:2:1-159:12
+		ADDED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml:2:1-160:12
 		INJECTED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml
 	android:versionCode
 		INJECTED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml:2:1-159:12
+		ADDED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml:2:1-160:12
 		INJECTED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml:2:11-69
@@ -329,7 +329,7 @@ MERGED from [com.google.firebase:firebase-iid:11.8.0] C:\Users\dikhong\.gradle\c
 	android:name
 		ADDED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml:47:22-65
 application
-ADDED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml:49:5-157:19
+ADDED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml:49:5-158:19
 MERGED from [com.android.support:design:25.1.0] C:\Users\dikhong\.gradle\caches\transforms-1\files-1.1\design-25.1.0.aar\31b3d6e6348153ee8cda345dc5f93d77\AndroidManifest.xml:25:5-20
 MERGED from [com.android.support:design:25.1.0] C:\Users\dikhong\.gradle\caches\transforms-1\files-1.1\design-25.1.0.aar\31b3d6e6348153ee8cda345dc5f93d77\AndroidManifest.xml:25:5-20
 MERGED from [com.google.android.gms:play-services:11.8.0] C:\Users\dikhong\.gradle\caches\transforms-1\files-1.1\play-services-11.8.0.aar\6686c67afe488aeaefc1513535d9ca09\AndroidManifest.xml:5:5-20
@@ -778,6 +778,10 @@ activity#com.MainFragments.SlideActivity
 ADDED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml:156:9-77
 	android:name
 		ADDED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml:156:19-65
+activity#com.OldScreens.WebviewActivity
+ADDED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml:157:9-76
+	android:name
+		ADDED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml:157:19-64
 uses-sdk
 INJECTED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml

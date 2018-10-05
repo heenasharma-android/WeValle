@@ -25,6 +25,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
+import android.widget.Toast;
 
 import com.OldScreens.FilterActivity;
 import com.OldScreens.NewProfileActivity;
@@ -35,10 +36,13 @@ import com.albaniancircle.AlbanianConstants;
 import com.albaniancircle.AlbanianPreferances;
 import com.albaniancircle.R;
 import com.android.volley.Request;
+import com.android.volley.RequestQueue;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.VolleyLog;
+import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.StringRequest;
+import com.android.volley.toolbox.Volley;
 import com.google.android.gms.common.GooglePlayServicesNotAvailableException;
 import com.google.android.gms.common.GooglePlayServicesRepairableException;
 import com.google.android.gms.common.api.Status;
@@ -49,6 +53,8 @@ import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.LatLngBounds;
 import com.locationmanager.LocationManagerFragmentActivity;
 
+import org.json.JSONArray;
+import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.util.ArrayList;
@@ -60,7 +66,7 @@ import java.util.Stack;
 /**
  * Created by Sumit on 28/08/2015.
  */
-public class HomeFragmentNewActivity extends LocationManagerFragmentActivity implements FeaturedFragment.OnFragmentInteractionListener, PlaceSelectionListener ,PlaceTabFragment.OnFragmentInteractionListener{
+public class HomeFragmentNewActivity extends LocationManagerFragmentActivity implements FeaturedFragment.OnFragmentInteractionListener, PlaceSelectionListener ,PlaceTabFragment.OnFragmentInteractionListener,TabFragment.OnFragmentInteractionListener{
 
 
     private static String TAG = HomeFragmentNewActivity.class.getSimpleName();
@@ -171,7 +177,7 @@ public class HomeFragmentNewActivity extends LocationManagerFragmentActivity imp
             @Override
             public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
                 switch (position) {
-                    case 0:
+                    case 1:
                         fab1.show();
                         fab2.show();
                         fabVisible = true;
@@ -187,7 +193,7 @@ public class HomeFragmentNewActivity extends LocationManagerFragmentActivity imp
             @Override
             public void onPageSelected(int position) {
                 switch (position) {
-                    case 0:
+                    case 1:
                         fab1.show();
                         fab2.show();
                         fabVisible = true;
@@ -205,7 +211,7 @@ public class HomeFragmentNewActivity extends LocationManagerFragmentActivity imp
 
             }
         });
-        setupViewPager(viewPager);
+        //setupViewPager(viewPager);
 
         tabLayout = (TabLayout) findViewById(R.id.tabs);
         tabLayout.setupWithViewPager(viewPager);
@@ -257,17 +263,88 @@ public class HomeFragmentNewActivity extends LocationManagerFragmentActivity imp
 //                 displayView(6);
 //        }
         // display the first navigation drawer view on app launch
+        sendJsonRequest();
+    }
 
+    public void sendJsonRequest() {
+        AlbanianApplication.showProgressDialog(HomeFragmentNewActivity.this,"","Loading..");
+        String webAddress = "http://culturalsinglesapps.com/WeValleAPICalls.php";
+        RequestQueue queue = Volley.newRequestQueue(HomeFragmentNewActivity.this);
+
+        JSONObject object = new JSONObject();
+
+        try {
+            object.put("user_id", pref.getUserData().getUserId());
+            object.put("api_name", "list_tabs");
+
+        } catch (JSONException e) {
+        }
+
+        final JsonObjectRequest request = new JsonObjectRequest(Request.Method.POST, webAddress, object, new com.android.volley.Response.Listener<JSONObject>() {
+
+            @Override
+            public void onResponse(JSONObject response) {
+                AlbanianApplication.hideProgressDialog(HomeFragmentNewActivity.this);
+                Log.d("RESPONSE", response.toString());
+
+                try {
+
+                    JSONArray jsonArray=response.getJSONArray("tabs");
+                    String ErrorCode = response.optString("ErrorCode");
+                    Log.d("ErrorCode", ErrorCode);
+                    if (ErrorCode.equalsIgnoreCase("1")) {
+                        viewPagerAdapter = new ViewPagerAdapter(getSupportFragmentManager());
+                        for (int i = 0; i < jsonArray.length(); i++) {
+//                            JSONObject jsonObject = jsonArray.getJSONObject(i);
+                            Log.d("RESPONSE", jsonArray.get(i).toString());
+                            if (jsonArray.get(i).equals("Feed")) {
+                                viewPagerAdapter.addFragment(TabFragment.newInstance(jsonArray.get(i).toString()), jsonArray.get(i).toString());
+                            }
+                            else if (jsonArray.get(i).equals("People"))
+                            {
+                                viewPagerAdapter.addFragment(new SearchNewFragment(), jsonArray.get(i).toString());
+                            }
+                            else if (jsonArray.get(i).equals("Featured"))
+                            {
+                                viewPagerAdapter.addFragment(new FeaturedFragment(), jsonArray.get(i).toString());
+                            }
+                            else if (jsonArray.get(i).equals("Places"))
+                            {
+                                viewPagerAdapter.addFragment(new PlaceTabFragment(), "Places");
+                            }
+                            else
+                            {
+                                viewPagerAdapter.addFragment(new PlaceTabFragment(), jsonArray.get(i).toString());
+                            }
+                            viewPager.setAdapter(viewPagerAdapter);
+                        }
+                    }
+
+                } catch (JSONException e) {
+                    e.printStackTrace();
+                }
+
+
+            }
+
+        }, new com.android.volley.Response.ErrorListener() {
+            @Override
+            public void onErrorResponse(VolleyError error) {
+                AlbanianApplication.hideProgressDialog(HomeFragmentNewActivity.this);
+                Toast.makeText(HomeFragmentNewActivity.this,error.toString().trim(),Toast.LENGTH_LONG).show();
+            }
+        });
+        queue.add(request);
     }
 
 
-    private void setupViewPager(ViewPager viewPager) {
-        viewPagerAdapter = new ViewPagerAdapter(getSupportFragmentManager());
-        viewPagerAdapter.addFragment(new SearchNewFragment(), "PEOPLE");
-        viewPagerAdapter.addFragment(new FeaturedFragment(), "FEATURED");
-        viewPagerAdapter.addFragment(new PlaceTabFragment(), "PLACES");
-        viewPager.setAdapter(viewPagerAdapter);
-    }
+//    private void setupViewPager(ViewPager viewPager) {
+//        viewPagerAdapter = new ViewPagerAdapter(getSupportFragmentManager());
+//        viewPagerAdapter.addFragment(new SearchNewFragment(), "PEOPLE");
+//        viewPagerAdapter.addFragment(new FeaturedFragment(), "FEATURED");
+//        viewPagerAdapter.addFragment(new PlaceTabFragment(), "PLACES");
+//        viewPager.setAdapter(viewPagerAdapter);
+//    }
 
     @Override
     public void onFragmentInteraction(Uri uri) {
@@ -458,7 +535,7 @@ public class HomeFragmentNewActivity extends LocationManagerFragmentActivity imp
     @Override
     protected void onResume() {
         super.onResume();
-        viewPagerAdapter.notifyDataSetChanged();
+//        viewPagerAdapter.notifyDataSetChanged();
         getMessageCount();
 
         registerReceiver(mChatMessageReceiver, new IntentFilter(
