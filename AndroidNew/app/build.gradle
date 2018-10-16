@@ -21,13 +21,11 @@ repositories {
 
 android {
     compileSdkVersion 25
-    buildToolsVersion '27.0.3'
+    buildToolsVersion '28.0.2'
     useLibrary 'org.apache.http.legacy'
     defaultConfig {
-
         applicationId "com.albaniancircle"
-        minSdkVersion 16
-
+        minSdkVersion 18
         versionCode 16
         versionName "2.1"
 

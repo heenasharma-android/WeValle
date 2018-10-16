@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.NewChanges.ChatActivity">
+
+    <LinearLayout
+        android:id="@+id/ll_header"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/lay_relative"
+            android:layout_width="fill_parent"
+            android:layout_height="48dp"
+            android:background="@color/buttoncolornew">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:id="@+id/rl_back_header"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight="1">
+
+
+                    <ImageView
+                        android:id="@+id/img_back"
+                        android:layout_width="40dp"
+                        android:layout_height="35dp"
+                        android:layout_centerVertical="true"
+                        android:paddingLeft="8dp"
+                        android:src="@drawable/left_arrow" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight="3.5">
+
+                    <TextView
+                        android:id="@+id/txt_headerlogo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="Chat"
+                        android:textColor="#ffffff"
+                        android:textSize="17sp"
+                        android:textStyle="bold" />
+
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/rl_refreshchat"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight="1">
+
+
+                    <ImageView
+                        android:id="@+id/img_refresh"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/refreshbutton"
+                        android:visibility="gone" />
+                </RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
+
+    </LinearLayout>
+<android.support.v4.widget.NestedScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:padding="@dimen/dimen_10dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <TextView
+        android:textStyle="bold"
+        android:layout_marginLeft="5dp"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:text="@string/Favorites"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_fav"
+            android:nestedScrollingEnabled="false"
+            android:layout_marginTop="@dimen/dimen_10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </android.support.v7.widget.RecyclerView>
+
+        <TextView
+            android:textStyle="bold"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="@dimen/dimen_10dp"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:text="@string/Viewedyou"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_view"
+            android:nestedScrollingEnabled="false"
+            android:layout_marginTop="@dimen/dimen_10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </android.support.v7.widget.RecyclerView>
+
+        <TextView
+            android:textStyle="bold"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="@dimen/dimen_10dp"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:text="@string/Chat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_chat"
+            android:nestedScrollingEnabled="false"
+            android:layout_marginTop="@dimen/dimen_10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </android.support.v7.widget.RecyclerView>
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>
+</LinearLayout>

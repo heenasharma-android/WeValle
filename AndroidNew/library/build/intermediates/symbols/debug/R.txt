@@ -88,7 +88,7 @@ int style Theme_PageIndicatorDefaults 0x7f160002
 int style Widget 0x7f160003
 int style Widget_IconPageIndicator 0x7f160004
 int style Widget_TabPageIndicator 0x7f160005
-int[] styleable CirclePageIndicator { 0x010100d4, 0x010100c4, 0x7f040001, 0x7f040006, 0x7f040010, 0x7f040011, 0x7f040014, 0x7f040015, 0x7f040016 }
+int[] styleable CirclePageIndicator { 0x10100d4, 0x10100c4, 0x7f040001, 0x7f040006, 0x7f040010, 0x7f040011, 0x7f040014, 0x7f040015, 0x7f040016 }
 int styleable CirclePageIndicator_android_background 0
 int styleable CirclePageIndicator_android_orientation 1
 int styleable CirclePageIndicator_centered 2
@@ -98,7 +98,7 @@ int styleable CirclePageIndicator_radius 5
 int styleable CirclePageIndicator_snap 6
 int styleable CirclePageIndicator_strokeColor 7
 int styleable CirclePageIndicator_strokeWidth 8
-int[] styleable LinePageIndicator { 0x010100d4, 0x7f040001, 0x7f04000d, 0x7f04000f, 0x7f040013, 0x7f040016, 0x7f040019 }
+int[] styleable LinePageIndicator { 0x10100d4, 0x7f040001, 0x7f04000d, 0x7f04000f, 0x7f040013, 0x7f040016, 0x7f040019 }
 int styleable LinePageIndicator_android_background 0
 int styleable LinePageIndicator_centered 1
 int styleable LinePageIndicator_gapWidth 2
@@ -106,7 +106,7 @@ int styleable LinePageIndicator_lineWidth 3
 int styleable LinePageIndicator_selectedColor 4
 int styleable LinePageIndicator_strokeWidth 5
 int styleable LinePageIndicator_unselectedColor 6
-int[] styleable TitlePageIndicator { 0x010100d4, 0x01010098, 0x01010095, 0x7f040002, 0x7f040007, 0x7f040008, 0x7f040009, 0x7f04000a, 0x7f04000b, 0x7f04000c, 0x7f04000e, 0x7f040012, 0x7f040013, 0x7f040017, 0x7f040018 }
+int[] styleable TitlePageIndicator { 0x10100d4, 0x1010098, 0x1010095, 0x7f040002, 0x7f040007, 0x7f040008, 0x7f040009, 0x7f04000a, 0x7f04000b, 0x7f04000c, 0x7f04000e, 0x7f040012, 0x7f040013, 0x7f040017, 0x7f040018 }
 int styleable TitlePageIndicator_android_background 0
 int styleable TitlePageIndicator_android_textColor 1
 int styleable TitlePageIndicator_android_textSize 2
@@ -122,7 +122,7 @@ int styleable TitlePageIndicator_selectedBold 11
 int styleable TitlePageIndicator_selectedColor 12
 int styleable TitlePageIndicator_titlePadding 13
 int styleable TitlePageIndicator_topPadding 14
-int[] styleable UnderlinePageIndicator { 0x010100d4, 0x7f040003, 0x7f040004, 0x7f040005, 0x7f040013 }
+int[] styleable UnderlinePageIndicator { 0x10100d4, 0x7f040003, 0x7f040004, 0x7f040005, 0x7f040013 }
 int styleable UnderlinePageIndicator_android_background 0
 int styleable UnderlinePageIndicator_fadeDelay 1
 int styleable UnderlinePageIndicator_fadeLength 2

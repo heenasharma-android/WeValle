@@ -25,7 +25,6 @@
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-    <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS_FULL" />
     <uses-permission android:name="android.permission.GET_TASKS" />
     <uses-permission android:name="android.permission.CALL_PHONE" />
     <uses-permission android:name="com.sonyericsson.home.permission.BROADCAST_BADGE" />
@@ -155,6 +154,7 @@
         <activity android:name="com.OldScreens.ProfessionActivity" />
         <activity android:name="com.MainFragments.SlideActivity"></activity>
         <activity android:name="com.OldScreens.WebviewActivity"></activity>
+        <activity android:name="com.NewChanges.ChatActivity"></activity>
     </application>
 
 </manifest>

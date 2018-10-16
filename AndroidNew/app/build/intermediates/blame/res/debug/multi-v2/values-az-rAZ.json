@@ -4,7 +4,7 @@
             "outputFile": "C:\\Users\\dikhong\\Documents\\GitHub\\WeValle\\AndroidNew\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-az-rAZ\\values-az-rAZ.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\dikhong\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.3.1.aar\\4448defbf883f30f251104519fa0a038\\res\\values-az-rAZ\\values-az-rAZ.xml",
+                    "source": "C:\\Users\\dikhong\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.3.1.aar\\3435f4f9569a70d2629e6702044ddd40\\res\\values-az-rAZ\\values-az-rAZ.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -21,7 +21,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\dikhong\\.gradle\\caches\\transforms-1\\files-1.1\\mediarouter-v7-25.2.0.aar\\5cf25b6ac3b03c2095408720017fdbd2\\res\\values-az-rAZ\\values-az-rAZ.xml",
+                    "source": "C:\\Users\\dikhong\\.gradle\\caches\\transforms-1\\files-1.1\\mediarouter-v7-25.2.0.aar\\9225ce11f46bd4e14bb2bb77acfe4037\\res\\values-az-rAZ\\values-az-rAZ.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",

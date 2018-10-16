@@ -10,14 +10,13 @@ import android.widget.TextView;
 
 import com.albaniancircle.R;
 import com.albaniancircle.RoundedCornersTransformationCustom;
-import com.models.International;
 import com.models.Local;
 import com.squareup.picasso.Picasso;
 import com.squareup.picasso.Transformation;
 
 import java.util.List;
 
-public class LocalAdapter  extends RecyclerView.Adapter<LocalAdapter.ViewHolder> {
+public class LocalAdapter extends RecyclerView.Adapter<LocalAdapter.ViewHolder> {
 
     private List<Local> internationals;
     Context context;

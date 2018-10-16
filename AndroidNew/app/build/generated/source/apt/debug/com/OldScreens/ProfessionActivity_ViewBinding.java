@@ -17,7 +17,7 @@ public class ProfessionActivity_ViewBinding<T extends ProfessionActivity> implem
 
   private View view2131296307;
 
-  private View view2131296857;
+  private View view2131296860;
 
   private View view2131296320;
 
@@ -36,7 +36,7 @@ public class ProfessionActivity_ViewBinding<T extends ProfessionActivity> implem
       }
     });
     view = Utils.findRequiredView(source, R.id.title, "method 'title'");
-    view2131296857 = view;
+    view2131296860 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -63,8 +63,8 @@ public class ProfessionActivity_ViewBinding<T extends ProfessionActivity> implem
 
     view2131296307.setOnClickListener(null);
     view2131296307 = null;
-    view2131296857.setOnClickListener(null);
-    view2131296857 = null;
+    view2131296860.setOnClickListener(null);
+    view2131296860 = null;
     view2131296320.setOnClickListener(null);
     view2131296320 = null;
 

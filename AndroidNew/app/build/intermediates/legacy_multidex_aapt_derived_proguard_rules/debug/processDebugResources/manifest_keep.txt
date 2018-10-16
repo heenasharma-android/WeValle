@@ -1,0 +1,2 @@
+# Referenced at C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:58
+-keep class com.albaniancircle.AlbanianApplication { <init>(...); }

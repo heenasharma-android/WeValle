@@ -27,9 +27,9 @@ import android.view.Window;
 import android.view.WindowManager;
 import android.widget.Toast;
 
+import com.NewChanges.ChatActivity;
 import com.OldScreens.FilterActivity;
 import com.OldScreens.NewProfileActivity;
-import com.SigninSignup.ChatTab;
 import com.SigninSignup.ListActivity;
 import com.albaniancircle.AlbanianApplication;
 import com.albaniancircle.AlbanianConstants;
@@ -576,7 +576,8 @@ public class HomeFragmentNewActivity extends LocationManagerFragmentActivity imp
         }
         else if (id==R.id.chat)
         {
-            startActivity(new Intent(HomeFragmentNewActivity.this, ChatTab.class));
+           // startActivity(new Intent(HomeFragmentNewActivity.this, ChatTab.class));
+            startActivity(new Intent(HomeFragmentNewActivity.this, ChatActivity.class));
             return true;
 
         }

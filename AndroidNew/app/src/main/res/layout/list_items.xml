@@ -4,6 +4,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
     <RelativeLayout
+        android:padding="5dp"
         android:layout_width="match_parent"
         android:layout_marginTop="0dp"
         android:layout_height="wrap_content">
@@ -13,8 +14,7 @@
             android:layout_width="80dp"
             android:layout_height="80dp"
             android:layout_marginTop="5dp"
-            android:background="@drawable/outline"
-            android:layout_marginLeft="10dp"/>
+            android:background="@drawable/outline" />
 
         <LinearLayout
             android:layout_centerVertical="true"
