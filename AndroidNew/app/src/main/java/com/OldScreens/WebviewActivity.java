@@ -13,6 +13,7 @@ import android.webkit.WebResourceRequest;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.ProgressBar;
+import android.widget.TextView;
 
 import com.albaniancircle.AlbanianApplication;
 import com.albaniancircle.R;
@@ -22,7 +23,7 @@ import butterknife.ButterKnife;
 
 public class WebviewActivity extends AppCompatActivity {
 
-    String link;
+    String link,title;
     private float m_downX;
 
     @Override
@@ -31,7 +32,8 @@ public class WebviewActivity extends AppCompatActivity {
         setContentView(R.layout.activity_webview);
         ButterKnife.bind(this);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        toolbar.setNavigationIcon(R.drawable.icons8_back_48);
+        TextView textView=(TextView) toolbar.findViewById(R.id.toolbar_title);
+        toolbar.setNavigationIcon(R.drawable.left_arrow);
         toolbar.setNavigationOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -41,6 +43,8 @@ public class WebviewActivity extends AppCompatActivity {
         });
         initWebView();
         link = getIntent().getStringExtra("link");
+        title= getIntent().getStringExtra("title");
+        textView.setText(title);
         if (link != null) {
             webView.loadUrl(link);
         }

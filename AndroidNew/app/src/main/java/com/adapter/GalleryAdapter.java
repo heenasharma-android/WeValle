@@ -13,8 +13,10 @@ import android.widget.TextView;
 
 import com.OldScreens.WebviewActivity;
 import com.albaniancircle.R;
+import com.albaniancircle.RoundedCornersTransformationCustom;
 import com.holders.GalleryData;
 import com.squareup.picasso.Picasso;
+import com.squareup.picasso.Transformation;
 
 import java.util.List;
 
@@ -35,18 +37,28 @@ public class GalleryAdapter extends RecyclerView.Adapter<GalleryAdapter.ViewHold
 
     @RequiresApi(api = Build.VERSION_CODES.M)
     @Override
-    public void onBindViewHolder(final GalleryAdapter.ViewHolder viewHolder, final int i) {
-        final GalleryData galleryData1 =galleryData.get(i);
-        viewHolder.tvTitle.setText(galleryData1.getTitle());
+    public void onBindViewHolder(final GalleryAdapter.ViewHolder viewHolder, final int position) {
+        final int pos = position;
+        viewHolder.tvTitle.setText(galleryData.get(pos).getTitle());
+        viewHolder.tvDes.setText(galleryData.get(pos).getType());
+        viewHolder.tvView.setText("Views: "+galleryData.get(pos).getViews());
         viewHolder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent=new Intent(context, WebviewActivity.class);
-                intent.putExtra("link","https://www.youtube.com/watch?v=lY6-ryYcuRM");
+                intent.putExtra("link",galleryData.get(pos).getUrl());
+                intent.putExtra("title",galleryData.get(pos).getTitle());
                 context.startActivity(intent);
             }
         });
-        Picasso.with(context).load(galleryData1.getImage()).into(viewHolder.imageView);
+
+        final int radius = 15;
+        final int margin = 3;
+        final Transformation transformation = new RoundedCornersTransformationCustom(radius, margin);
+
+        Picasso.with(context).load(galleryData.get(pos).getThumbnail())
+                .transform(transformation)
+                .into(viewHolder.ivImage);
     }
 
 
@@ -61,13 +73,15 @@ public class GalleryAdapter extends RecyclerView.Adapter<GalleryAdapter.ViewHold
 
 
     public class ViewHolder extends RecyclerView.ViewHolder{
-        private TextView tvTitle;
-        ImageView imageView;
+        private TextView tvTitle,tvDes,tvView;
+        ImageView ivImage;
 
         public ViewHolder(View view) {
             super(view);
             tvTitle= (TextView)view.findViewById(R.id.tv_title);
-            imageView= (ImageView)view.findViewById(R.id.iv_image);
+            tvDes= (TextView)view.findViewById(R.id.tv_des);
+            tvView= (TextView)view.findViewById(R.id.tv_view);
+            ivImage= (ImageView)view.findViewById(R.id.iv_image);
         }
     }
 

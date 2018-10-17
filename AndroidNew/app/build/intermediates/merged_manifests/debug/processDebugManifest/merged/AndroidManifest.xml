@@ -67,6 +67,7 @@
         android:theme="@style/MyMaterialTheme" >
         <activity
             android:name="com.MainFragments.HomeFragmentNewActivity"
+            android:configChanges="keyboardHidden|screenSize|orientation"
             android:exported="true"
             android:label="@string/app_name"
             android:screenOrientation="portrait" />
@@ -166,7 +167,8 @@
         <activity android:name="com.OldScreens.ProfessionActivity" />
         <activity android:name="com.MainFragments.SlideActivity" />
         <activity android:name="com.OldScreens.WebviewActivity" />
-        <activity android:name="com.NewChanges.ChatActivity" />
+        <activity android:name="com.NewChanges.ChatActivity" >
+        </activity>
 
         <receiver android:name="com.google.android.gms.cast.framework.media.MediaIntentReceiver" />
 

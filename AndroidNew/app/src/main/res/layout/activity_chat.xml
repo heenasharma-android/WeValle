@@ -98,7 +98,7 @@
     <TextView
         android:textStyle="bold"
         android:layout_marginLeft="5dp"
-        android:textColor="@color/black"
+        android:textColor="@color/purp"
         android:textSize="18sp"
         android:text="@string/Favorites"
         android:layout_width="match_parent"
@@ -116,9 +116,9 @@
             android:textStyle="bold"
             android:layout_marginLeft="5dp"
             android:layout_marginTop="@dimen/dimen_10dp"
-            android:textColor="@color/black"
+            android:textColor="@color/purp"
             android:textSize="18sp"
-            android:text="@string/Viewedyou"
+            android:text="Viewed me"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
@@ -134,9 +134,9 @@
             android:textStyle="bold"
             android:layout_marginLeft="5dp"
             android:layout_marginTop="@dimen/dimen_10dp"
-            android:textColor="@color/black"
+            android:textColor="@color/purp"
             android:textSize="18sp"
-            android:text="@string/Chat"
+            android:text="@string/Messages"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 

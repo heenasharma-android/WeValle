@@ -1262,6 +1262,7 @@ drawable hide
 drawable home_normal
 drawable home_selected
 drawable hometab_selector
+drawable ic_add_black_24dp
 drawable ic_amex
 drawable ic_audiotrack_dark
 drawable ic_audiotrack_light
@@ -1490,6 +1491,7 @@ drawable people_normal
 drawable people_selected
 drawable pet
 drawable pets_icon
+drawable place
 drawable placeholder_location
 drawable places_ic_clear
 drawable places_ic_search
@@ -1551,6 +1553,7 @@ drawable rednot_bg
 drawable refreshbutton
 drawable registerbg
 drawable rounded
+drawable rounded_corner
 drawable roundedborder
 drawable roundedbutton
 drawable search
@@ -2048,6 +2051,7 @@ id place_autocomplete_search_input
 id place_autocomplete_separator
 id plain
 id plan_pager
+id plus
 id production
 id profile
 id progressBar
@@ -2241,6 +2245,7 @@ id tv_block_list
 id tv_cancel
 id tv_contact
 id tv_deactivate_account
+id tv_des
 id tv_drink
 id tv_email
 id tv_empty
@@ -2277,6 +2282,7 @@ id tv_ubatch
 id tv_user_des
 id tv_username
 id tv_username_online
+id tv_view
 id tv_your_desc
 id tv_your_pets
 id tv_your_religion
@@ -2504,6 +2510,7 @@ layout fragment_featured
 layout fragment_matche_questions
 layout fragment_messages
 layout fragment_place_tab
+layout fragment_places
 layout fragment_profile
 layout fragment_tab
 layout fragment_view_images
@@ -2566,6 +2573,7 @@ layout place_autocomplete_fragment
 layout place_autocomplete_item_powered_by_google
 layout place_autocomplete_item_prediction
 layout place_autocomplete_progress
+layout place_list
 layout profile_gallery_item
 layout progress_hud
 layout question_new_layout

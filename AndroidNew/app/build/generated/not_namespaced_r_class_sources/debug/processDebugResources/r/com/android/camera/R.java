@@ -27,10 +27,10 @@ public final class R {
         public static final int camera_crop_height = 0x7f08006b;
         public static final int camera_crop_width = 0x7f08006c;
         public static final int detail_photo_border = 0x7f0800cb;
-        public static final int ic_menu_3d_globe = 0x7f080121;
-        public static final int ic_menu_camera_video_view = 0x7f080122;
-        public static final int ic_menu_view_details = 0x7f080123;
-        public static final int indicator_autocrop = 0x7f080195;
+        public static final int ic_menu_3d_globe = 0x7f080122;
+        public static final int ic_menu_camera_video_view = 0x7f080123;
+        public static final int ic_menu_view_details = 0x7f080124;
+        public static final int indicator_autocrop = 0x7f080196;
     }
     public static final class id {
         private id() {}
@@ -66,8 +66,8 @@ public final class R {
         public static final int details_whitebalance_value = 0x7f0900ac;
         public static final int discard = 0x7f0900b0;
         public static final int image = 0x7f090103;
-        public static final int save = 0x7f090213;
-        public static final int scroll_view = 0x7f090219;
+        public static final int save = 0x7f090214;
+        public static final int scroll_view = 0x7f09021a;
     }
     public static final class layout {
         private layout() {}

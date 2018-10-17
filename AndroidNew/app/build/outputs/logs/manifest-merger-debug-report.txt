@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml:2:1-160:12
-INJECTED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml:2:1-160:12
-INJECTED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml:2:1-160:12
-INJECTED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml:2:1-160:12
+ADDED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml:2:1-163:12
+INJECTED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml:2:1-163:12
+INJECTED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml:2:1-163:12
+INJECTED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml:2:1-163:12
 MERGED from [com.android.support:multidex:1.0.3] C:\Users\dikhong\.gradle\caches\transforms-1\files-1.1\multidex-1.0.3.aar\caec7468d84a266c22dfd23ce399fb9d\AndroidManifest.xml:17:1-22:12
 MERGED from [com.stripe:stripe-android:4.1.3] C:\Users\dikhong\.gradle\caches\transforms-1\files-1.1\stripe-android-4.1.3.aar\766dc776f4069dc9d41442419a2584f9\AndroidManifest.xml:2:1-11:12
 MERGED from [com.android.support:design:25.1.0] C:\Users\dikhong\.gradle\caches\transforms-1\files-1.1\design-25.1.0.aar\b9d8e848149475cf8752a88b5283072b\AndroidManifest.xml:17:1-27:12
@@ -137,20 +137,20 @@ MERGED from [com.google.android.gms:play-services-vision-license:11.8.0] C:\User
 MERGED from [com.google.android.gms:play-services-wallet-license:11.8.0] C:\Users\dikhong\.gradle\caches\transforms-1\files-1.1\play-services-wallet-license-11.8.0.aar\25c2ec4e4e886fcb2c3b8226b23b839a\AndroidManifest.xml:2:1-6:12
 MERGED from [com.google.android.gms:play-services-wearable-license:11.8.0] C:\Users\dikhong\.gradle\caches\transforms-1\files-1.1\play-services-wearable-license-11.8.0.aar\62d45284c5601883c0ee06107e3a5890\AndroidManifest.xml:2:1-6:12
 MERGED from [com.google.android.gms:play-services-analytics-license:11.8.0] C:\Users\dikhong\.gradle\caches\transforms-1\files-1.1\play-services-analytics-license-11.8.0.aar\bcd481819e67c1e5634622778af5b236\AndroidManifest.xml:2:1-6:12
-INJECTED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml:2:1-160:12
-INJECTED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml:2:1-160:12
-INJECTED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml:2:1-160:12
+INJECTED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml:2:1-163:12
+INJECTED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml:2:1-163:12
+INJECTED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml:2:1-163:12
 	package
 		ADDED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml:3:5-33
 		INJECTED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml:2:1-160:12
+		ADDED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml:2:1-163:12
 		INJECTED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml
 	android:versionCode
 		INJECTED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml:2:1-160:12
+		ADDED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml:2:1-163:12
 		INJECTED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml:2:11-69
@@ -325,7 +325,7 @@ MERGED from [com.google.firebase:firebase-iid:11.8.0] C:\Users\dikhong\.gradle\c
 	android:name
 		ADDED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml:46:22-65
 application
-ADDED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml:48:5-158:19
+ADDED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml:48:5-161:19
 MERGED from [com.android.support:design:25.1.0] C:\Users\dikhong\.gradle\caches\transforms-1\files-1.1\design-25.1.0.aar\b9d8e848149475cf8752a88b5283072b\AndroidManifest.xml:25:5-20
 MERGED from [com.android.support:design:25.1.0] C:\Users\dikhong\.gradle\caches\transforms-1\files-1.1\design-25.1.0.aar\b9d8e848149475cf8752a88b5283072b\AndroidManifest.xml:25:5-20
 MERGED from [com.google.android.gms:play-services:11.8.0] C:\Users\dikhong\.gradle\caches\transforms-1\files-1.1\play-services-11.8.0.aar\378379b9893aba31b340d5b7851f8ac5\AndroidManifest.xml:5:5-20
@@ -575,213 +575,215 @@ MERGED from [com.google.android.gms:play-services-analytics-license:11.8.0] C:\U
 	android:name
 		ADDED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml:49:9-44
 activity#com.MainFragments.HomeFragmentNewActivity
-ADDED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml:57:9-61:52
+ADDED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml:57:9-62:52
 	android:screenOrientation
-		ADDED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml:61:13-49
+		ADDED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml:62:13-49
 	android:label
 		ADDED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml:60:13-45
 	android:exported
 		ADDED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml:59:13-36
+	android:configChanges
+		ADDED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml:61:13-74
 	android:name
 		ADDED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml:58:13-69
 activity#com.albaniancircle.Splash
-ADDED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml:62:9-72:20
+ADDED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml:63:9-73:20
 	android:screenOrientation
-		ADDED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml:66:13-49
+		ADDED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml:67:13-49
 	android:label
-		ADDED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml:65:13-45
+		ADDED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml:66:13-45
 	android:exported
-		ADDED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml:64:13-36
+		ADDED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml:65:13-36
 	android:name
-		ADDED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml:63:13-35
+		ADDED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml:64:13-35
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml:67:13-71:29
+ADDED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml:68:13-72:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml:68:17-69
+ADDED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml:69:17-69
 	android:name
-		ADDED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml:68:25-66
+		ADDED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml:69:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml:70:17-77
+ADDED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml:71:17-77
 	android:name
-		ADDED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml:70:27-74
+		ADDED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml:71:27-74
 activity#com.SigninSignup.SigninSignupFragmentActivity
-ADDED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml:73:9-76:55
+ADDED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml:74:9-77:55
 	android:screenOrientation
-		ADDED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml:75:13-49
+		ADDED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml:76:13-49
 	android:windowSoftInputMode
-		ADDED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml:76:13-52
+		ADDED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml:77:13-52
 	android:name
-		ADDED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml:74:13-73
+		ADDED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml:75:13-73
 activity#com.android.camera.CropImage
-ADDED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml:77:9-65
+ADDED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml:78:9-65
 	android:name
-		ADDED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml:77:19-62
+		ADDED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml:78:19-62
 receiver#com.google.android.gcm.GCMBroadcastReceiver
-ADDED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml:79:9-88:20
+ADDED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml:80:9-89:20
 	android:permission
-		ADDED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml:81:13-73
+		ADDED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml:82:13-73
 	android:name
-		ADDED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml:80:13-71
+		ADDED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml:81:13-71
 intent-filter#action:name:com.google.android.c2dm.intent.RECEIVE+action:name:com.google.android.c2dm.intent.REGISTRATION+category:name:com.albaniancircle
-ADDED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml:82:13-87:29
+ADDED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml:83:13-88:29
 action#com.google.android.c2dm.intent.RECEIVE
-ADDED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml:83:17-81
+ADDED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml:84:17-81
 	android:name
-		ADDED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml:83:25-78
+		ADDED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml:84:25-78
 action#com.google.android.c2dm.intent.REGISTRATION
-ADDED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml:84:17-86
+ADDED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml:85:17-86
 	android:name
-		ADDED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml:84:25-83
+		ADDED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml:85:25-83
 category#com.albaniancircle
-ADDED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml:86:17-63
+ADDED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml:87:17-63
 	android:name
-		ADDED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml:86:27-60
+		ADDED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml:87:27-60
 service#com.albaniancircle.GCMIntentService
-ADDED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml:90:9-53
+ADDED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml:91:9-53
 	android:name
-		ADDED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml:90:18-50
+		ADDED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml:91:18-50
 meta-data#com.google.android.gms.version
-ADDED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml:94:9-96:69
+ADDED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml:95:9-97:69
 MERGED from [com.google.android.gms:play-services-basement:11.8.0] C:\Users\dikhong\.gradle\caches\transforms-1\files-1.1\play-services-basement-11.8.0.aar\b6eceb25194dbbfb10824c41a8eecc62\AndroidManifest.xml:23:9-25:69
 MERGED from [com.google.android.gms:play-services-basement:11.8.0] C:\Users\dikhong\.gradle\caches\transforms-1\files-1.1\play-services-basement-11.8.0.aar\b6eceb25194dbbfb10824c41a8eecc62\AndroidManifest.xml:23:9-25:69
 	android:value
-		ADDED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml:96:13-66
+		ADDED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml:97:13-66
 	android:name
-		ADDED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml:95:13-58
+		ADDED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml:96:13-58
 meta-data#com.google.android.geo.API_KEY
-ADDED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml:97:9-99:71
+ADDED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml:98:9-100:71
 	android:value
-		ADDED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml:99:13-68
+		ADDED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml:100:13-68
 	android:name
-		ADDED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml:98:13-58
+		ADDED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml:99:13-58
 receiver#com.google.android.gms.analytics.AnalyticsReceiver
-ADDED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml:105:9-111:20
+ADDED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml:106:9-112:20
 MERGED from [com.google.android.gms:play-services-analytics:11.8.0] C:\Users\dikhong\.gradle\caches\transforms-1\files-1.1\play-services-analytics-11.8.0.aar\7798758876c55b0ce2ac2eb7d9b029fa\AndroidManifest.xml:30:9-34:20
 MERGED from [com.google.android.gms:play-services-analytics:11.8.0] C:\Users\dikhong\.gradle\caches\transforms-1\files-1.1\play-services-analytics-11.8.0.aar\7798758876c55b0ce2ac2eb7d9b029fa\AndroidManifest.xml:30:9-34:20
 	android:enabled
-		ADDED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml:107:13-35
+		ADDED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml:108:13-35
 	android:exported
 		ADDED from [com.google.android.gms:play-services-analytics:11.8.0] C:\Users\dikhong\.gradle\caches\transforms-1\files-1.1\play-services-analytics-11.8.0.aar\7798758876c55b0ce2ac2eb7d9b029fa\AndroidManifest.xml:33:13-37
 	android:name
-		ADDED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml:106:13-78
+		ADDED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml:107:13-78
 intent-filter#action:name:com.google.android.gms.analytics.ANALYTICS_DISPATCH
-ADDED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml:108:13-110:29
+ADDED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml:109:13-111:29
 action#com.google.android.gms.analytics.ANALYTICS_DISPATCH
-ADDED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml:109:17-94
+ADDED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml:110:17-94
 	android:name
-		ADDED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml:109:25-91
+		ADDED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml:110:25-91
 service#com.google.android.gms.analytics.AnalyticsService
-ADDED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml:113:9-116:40
+ADDED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml:114:9-117:40
 MERGED from [com.google.android.gms:play-services-analytics:11.8.0] C:\Users\dikhong\.gradle\caches\transforms-1\files-1.1\play-services-analytics-11.8.0.aar\7798758876c55b0ce2ac2eb7d9b029fa\AndroidManifest.xml:36:9-39:40
 MERGED from [com.google.android.gms:play-services-analytics:11.8.0] C:\Users\dikhong\.gradle\caches\transforms-1\files-1.1\play-services-analytics-11.8.0.aar\7798758876c55b0ce2ac2eb7d9b029fa\AndroidManifest.xml:36:9-39:40
 	android:enabled
-		ADDED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml:115:13-35
+		ADDED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml:116:13-35
 	android:exported
-		ADDED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml:116:13-37
+		ADDED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml:117:13-37
 	android:name
-		ADDED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml:114:13-77
+		ADDED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml:115:13-77
 receiver#com.google.android.gms.analytics.CampaignTrackingReceiver
-ADDED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml:122:9-128:20
+ADDED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml:123:9-129:20
 	android:exported
-		ADDED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml:124:13-36
+		ADDED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml:125:13-36
 	android:name
-		ADDED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml:123:13-85
+		ADDED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml:124:13-85
 intent-filter#action:name:com.android.vending.INSTALL_REFERRER
-ADDED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml:125:13-127:29
+ADDED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml:126:13-128:29
 action#com.android.vending.INSTALL_REFERRER
-ADDED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml:126:17-79
+ADDED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml:127:17-79
 	android:name
-		ADDED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml:126:25-76
+		ADDED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml:127:25-76
 service#com.google.android.gms.analytics.CampaignTrackingService
-ADDED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml:130:9-92
+ADDED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml:131:9-92
 	android:name
-		ADDED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml:130:18-89
+		ADDED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml:131:18-89
 meta-data#io.fabric.ApiKey
-ADDED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml:132:9-134:72
+ADDED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml:133:9-135:72
 	android:value
-		ADDED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml:134:13-69
+		ADDED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml:135:13-69
 	android:name
-		ADDED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml:133:13-44
+		ADDED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml:134:13-44
 activity#com.SigninSignup.TabbedActivity
-ADDED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml:136:9-68
+ADDED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml:137:9-68
 	android:name
-		ADDED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml:136:19-65
+		ADDED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml:137:19-65
 activity#com.SigninSignup.MyProfileActivity
-ADDED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml:137:9-71
+ADDED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml:138:9-71
 	android:name
-		ADDED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml:137:19-68
+		ADDED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml:138:19-68
 activity#com.SigninSignup.ListActivity
-ADDED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml:138:9-66
+ADDED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml:139:9-66
 	android:name
-		ADDED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml:138:19-63
+		ADDED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml:139:19-63
 activity#com.SigninSignup.ProfileActivity
-ADDED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml:139:9-69
+ADDED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml:140:9-69
 	android:name
-		ADDED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml:139:19-66
+		ADDED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml:140:19-66
 activity#com.SigninSignup.ChattingActivity
-ADDED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml:140:9-70
+ADDED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml:141:9-70
 	android:name
-		ADDED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml:140:19-67
+		ADDED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml:141:19-67
 activity#com.SigninSignup.ChatTab
-ADDED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml:141:9-61
+ADDED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml:142:9-61
 	android:name
-		ADDED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml:141:19-58
+		ADDED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml:142:19-58
 activity#com.SigninSignup.SettingActivity
-ADDED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml:142:9-69
+ADDED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml:143:9-69
 	android:name
-		ADDED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml:142:19-66
+		ADDED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml:143:19-66
 activity#com.OldScreens.OldListActivity
-ADDED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml:143:9-67
+ADDED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml:144:9-67
 	android:name
-		ADDED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml:143:19-64
+		ADDED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml:144:19-64
 activity#com.OldScreens.EditProfileActivity
-ADDED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml:144:9-71
+ADDED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml:145:9-71
 	android:name
-		ADDED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml:144:19-68
+		ADDED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml:145:19-68
 activity#com.OldScreens.OldProfile
-ADDED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml:145:9-148:40
+ADDED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml:146:9-149:40
 	android:launchMode
-		ADDED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml:147:13-44
+		ADDED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml:148:13-44
 	android:noHistory
-		ADDED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml:148:13-37
+		ADDED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml:149:13-37
 	android:name
-		ADDED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml:146:13-53
+		ADDED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml:147:13-53
 activity#com.OldScreens.FilterActivity
-ADDED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml:149:9-66
+ADDED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml:150:9-66
 	android:name
-		ADDED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml:149:19-63
+		ADDED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml:150:19-63
 activity#com.OldScreens.OldChatActivity
-ADDED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml:150:9-67
+ADDED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml:151:9-67
 	android:name
-		ADDED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml:150:19-64
+		ADDED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml:151:19-64
 activity#com.OldScreens.PlacesActivity
-ADDED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml:151:9-66
+ADDED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml:152:9-66
 	android:name
-		ADDED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml:151:19-63
+		ADDED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml:152:19-63
 activity#com.OldScreens.NewProfileActivity
-ADDED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml:152:9-70
+ADDED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml:153:9-70
 	android:name
-		ADDED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml:152:19-67
+		ADDED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml:153:19-67
 activity#com.OldScreens.EditProfile
-ADDED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml:153:9-63
+ADDED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml:154:9-63
 	android:name
-		ADDED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml:153:19-60
+		ADDED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml:154:19-60
 activity#com.OldScreens.ProfessionActivity
-ADDED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml:154:9-70
+ADDED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml:155:9-70
 	android:name
-		ADDED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml:154:19-67
+		ADDED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml:155:19-67
 activity#com.MainFragments.SlideActivity
-ADDED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml:155:9-77
+ADDED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml:156:9-77
 	android:name
-		ADDED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml:155:19-65
+		ADDED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml:156:19-65
 activity#com.OldScreens.WebviewActivity
-ADDED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml:156:9-76
+ADDED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml:157:9-76
 	android:name
-		ADDED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml:156:19-64
+		ADDED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml:157:19-64
 activity#com.NewChanges.ChatActivity
-ADDED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml:157:9-73
+ADDED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml:158:9-160:20
 	android:name
-		ADDED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml:157:19-61
+		ADDED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml:158:19-61
 uses-sdk
 INJECTED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\dikhong\Documents\GitHub\WeValle\AndroidNew\app\src\main\AndroidManifest.xml

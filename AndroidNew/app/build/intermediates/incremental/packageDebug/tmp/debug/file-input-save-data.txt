@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Tue Oct 16 15:57:08 IST 2018
+#Wed Oct 17 17:28:56 IST 2018
 2.base=C\:\\Users\\dikhong\\Documents\\GitHub\\WeValle\\AndroidNew\\app\\build\\intermediates\\merged_assets\\debug\\mergeDebugAssets\\out
 5.set=DEX
 0.path=fonts/HarabaraFont.otf

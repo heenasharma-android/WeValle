@@ -384,16 +384,16 @@
         "source": "C:\\Users\\dikhong\\.gradle\\caches\\transforms-1\\files-1.1\\mediarouter-v7-25.2.0.aar\\9225ce11f46bd4e14bb2bb77acfe4037\\res\\drawable-xhdpi-v4\\ic_mr_button_connecting_01_light.png"
     },
     {
-        "merged": "C:\\Users\\dikhong\\Documents\\GitHub\\WeValle\\AndroidNew\\app\\build\\intermediates\\res\\merged\\debug\\layout_select_dialog_singlechoice_material.xml.flat",
-        "source": "C:\\Users\\dikhong\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.3.1.aar\\3435f4f9569a70d2629e6702044ddd40\\res\\layout\\select_dialog_singlechoice_material.xml"
+        "merged": "C:\\Users\\dikhong\\Documents\\GitHub\\WeValle\\AndroidNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_btn_check_to_on_mtrl_015.png.flat",
+        "source": "C:\\Users\\dikhong\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.3.1.aar\\3435f4f9569a70d2629e6702044ddd40\\res\\drawable-xxhdpi-v4\\abc_btn_check_to_on_mtrl_015.png"
     },
     {
         "merged": "C:\\Users\\dikhong\\Documents\\GitHub\\WeValle\\AndroidNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_quantum_ic_volume_off_white_36.png.flat",
         "source": "C:\\Users\\dikhong\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-cast-framework-11.8.0.aar\\8f6be89d1bb2ab21030547d17350c8ce\\res\\drawable-xhdpi-v4\\quantum_ic_volume_off_white_36.png"
     },
     {
-        "merged": "C:\\Users\\dikhong\\Documents\\GitHub\\WeValle\\AndroidNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_btn_check_to_on_mtrl_015.png.flat",
-        "source": "C:\\Users\\dikhong\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.3.1.aar\\3435f4f9569a70d2629e6702044ddd40\\res\\drawable-xxhdpi-v4\\abc_btn_check_to_on_mtrl_015.png"
+        "merged": "C:\\Users\\dikhong\\Documents\\GitHub\\WeValle\\AndroidNew\\app\\build\\intermediates\\res\\merged\\debug\\layout_select_dialog_singlechoice_material.xml.flat",
+        "source": "C:\\Users\\dikhong\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.3.1.aar\\3435f4f9569a70d2629e6702044ddd40\\res\\layout\\select_dialog_singlechoice_material.xml"
     },
     {
         "merged": "C:\\Users\\dikhong\\Documents\\GitHub\\WeValle\\AndroidNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_ic_visa.png.flat",
@@ -488,16 +488,16 @@
         "source": "C:\\Users\\dikhong\\Documents\\GitHub\\WeValle\\AndroidNew\\app\\src\\main\\res\\drawable\\faq_login_icon.png"
     },
     {
-        "merged": "C:\\Users\\dikhong\\Documents\\GitHub\\WeValle\\AndroidNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_editicon.png.flat",
-        "source": "C:\\Users\\dikhong\\Documents\\GitHub\\WeValle\\AndroidNew\\app\\src\\main\\res\\drawable-xxxhdpi\\editicon.png"
+        "merged": "C:\\Users\\dikhong\\Documents\\GitHub\\WeValle\\AndroidNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_btn_radio_to_on_mtrl_015.png.flat",
+        "source": "C:\\Users\\dikhong\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.3.1.aar\\3435f4f9569a70d2629e6702044ddd40\\res\\drawable-hdpi-v4\\abc_btn_radio_to_on_mtrl_015.png"
     },
     {
         "merged": "C:\\Users\\dikhong\\Documents\\GitHub\\WeValle\\AndroidNew\\app\\build\\intermediates\\res\\merged\\debug\\layout_heritage_item.xml.flat",
         "source": "C:\\Users\\dikhong\\Documents\\GitHub\\WeValle\\AndroidNew\\app\\src\\main\\res\\layout\\heritage_item.xml"
     },
     {
-        "merged": "C:\\Users\\dikhong\\Documents\\GitHub\\WeValle\\AndroidNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_btn_radio_to_on_mtrl_015.png.flat",
-        "source": "C:\\Users\\dikhong\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.3.1.aar\\3435f4f9569a70d2629e6702044ddd40\\res\\drawable-hdpi-v4\\abc_btn_radio_to_on_mtrl_015.png"
+        "merged": "C:\\Users\\dikhong\\Documents\\GitHub\\WeValle\\AndroidNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_editicon.png.flat",
+        "source": "C:\\Users\\dikhong\\Documents\\GitHub\\WeValle\\AndroidNew\\app\\src\\main\\res\\drawable-xxxhdpi\\editicon.png"
     },
     {
         "merged": "C:\\Users\\dikhong\\Documents\\GitHub\\WeValle\\AndroidNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_cast_ic_stop_circle_filled_grey600.png.flat",
@@ -614,6 +614,10 @@
     {
         "merged": "C:\\Users\\dikhong\\Documents\\GitHub\\WeValle\\AndroidNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_ic_mr_button_connected_03_light.png.flat",
         "source": "C:\\Users\\dikhong\\.gradle\\caches\\transforms-1\\files-1.1\\mediarouter-v7-25.2.0.aar\\9225ce11f46bd4e14bb2bb77acfe4037\\res\\drawable-xxhdpi-v4\\ic_mr_button_connected_03_light.png"
+    },
+    {
+        "merged": "C:\\Users\\dikhong\\Documents\\GitHub\\WeValle\\AndroidNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_place.png.flat",
+        "source": "C:\\Users\\dikhong\\Documents\\GitHub\\WeValle\\AndroidNew\\app\\src\\main\\res\\drawable-xxxhdpi\\place.png"
     },
     {
         "merged": "C:\\Users\\dikhong\\Documents\\GitHub\\WeValle\\AndroidNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_ic_mr_button_connected_18_light.png.flat",
@@ -740,16 +744,20 @@
         "source": "C:\\Users\\dikhong\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-plus-11.8.0.aar\\001cbee82c5a6748b6407e90a15ff227\\res\\drawable-xhdpi-v4\\ic_plusone_small_off_client.png"
     },
     {
+        "merged": "C:\\Users\\dikhong\\Documents\\GitHub\\WeValle\\AndroidNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_place.png.flat",
+        "source": "C:\\Users\\dikhong\\Documents\\GitHub\\WeValle\\AndroidNew\\app\\src\\main\\res\\drawable-xxhdpi\\place.png"
+    },
+    {
         "merged": "C:\\Users\\dikhong\\Documents\\GitHub\\WeValle\\AndroidNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_btn_check_material.xml.flat",
         "source": "C:\\Users\\dikhong\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.3.1.aar\\3435f4f9569a70d2629e6702044ddd40\\res\\drawable\\abc_btn_check_material.xml"
     },
     {
-        "merged": "C:\\Users\\dikhong\\Documents\\GitHub\\WeValle\\AndroidNew\\app\\build\\intermediates\\res\\merged\\debug\\layout_grid_list_item.xml.flat",
-        "source": "C:\\Users\\dikhong\\Documents\\GitHub\\WeValle\\AndroidNew\\app\\src\\main\\res\\layout\\grid_list_item.xml"
-    },
-    {
         "merged": "C:\\Users\\dikhong\\Documents\\GitHub\\WeValle\\AndroidNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_cast_abc_scrubber_control_to_pressed_mtrl_005.png.flat",
         "source": "C:\\Users\\dikhong\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-cast-framework-11.8.0.aar\\8f6be89d1bb2ab21030547d17350c8ce\\res\\drawable-xxxhdpi-v4\\cast_abc_scrubber_control_to_pressed_mtrl_005.png"
+    },
+    {
+        "merged": "C:\\Users\\dikhong\\Documents\\GitHub\\WeValle\\AndroidNew\\app\\build\\intermediates\\res\\merged\\debug\\layout_grid_list_item.xml.flat",
+        "source": "C:\\Users\\dikhong\\Documents\\GitHub\\WeValle\\AndroidNew\\app\\src\\main\\res\\layout\\grid_list_item.xml"
     },
     {
         "merged": "C:\\Users\\dikhong\\Documents\\GitHub\\WeValle\\AndroidNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_quantum_ic_skip_previous_white_24.png.flat",
@@ -850,6 +858,10 @@
     {
         "merged": "C:\\Users\\dikhong\\Documents\\GitHub\\WeValle\\AndroidNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_textfield_search_activated_mtrl_alpha.9.png.flat",
         "source": "C:\\Users\\dikhong\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.3.1.aar\\3435f4f9569a70d2629e6702044ddd40\\res\\drawable-xhdpi-v4\\abc_textfield_search_activated_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "C:\\Users\\dikhong\\Documents\\GitHub\\WeValle\\AndroidNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_place.png.flat",
+        "source": "C:\\Users\\dikhong\\Documents\\GitHub\\WeValle\\AndroidNew\\app\\src\\main\\res\\drawable-mdpi\\place.png"
     },
     {
         "merged": "C:\\Users\\dikhong\\Documents\\GitHub\\WeValle\\AndroidNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21_ic_error_amex.xml.flat",
@@ -1224,6 +1236,10 @@
         "source": "C:\\Users\\dikhong\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-cast-framework-11.8.0.aar\\8f6be89d1bb2ab21030547d17350c8ce\\res\\drawable-hdpi-v4\\quantum_ic_forward_30_grey600_36.png"
     },
     {
+        "merged": "C:\\Users\\dikhong\\Documents\\GitHub\\WeValle\\AndroidNew\\app\\build\\intermediates\\res\\merged\\debug\\layout_place_list.xml.flat",
+        "source": "C:\\Users\\dikhong\\Documents\\GitHub\\WeValle\\AndroidNew\\app\\src\\main\\res\\layout\\place_list.xml"
+    },
+    {
         "merged": "C:\\Users\\dikhong\\Documents\\GitHub\\WeValle\\AndroidNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable_message_selected.png.flat",
         "source": "C:\\Users\\dikhong\\Documents\\GitHub\\WeValle\\AndroidNew\\app\\src\\main\\res\\drawable\\message_selected.png"
     },
@@ -1278,6 +1294,10 @@
     {
         "merged": "C:\\Users\\dikhong\\Documents\\GitHub\\WeValle\\AndroidNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_ic_mr_button_connecting_06_dark.png.flat",
         "source": "C:\\Users\\dikhong\\.gradle\\caches\\transforms-1\\files-1.1\\mediarouter-v7-25.2.0.aar\\9225ce11f46bd4e14bb2bb77acfe4037\\res\\drawable-xxhdpi-v4\\ic_mr_button_connecting_06_dark.png"
+    },
+    {
+        "merged": "C:\\Users\\dikhong\\Documents\\GitHub\\WeValle\\AndroidNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_place.png.flat",
+        "source": "C:\\Users\\dikhong\\Documents\\GitHub\\WeValle\\AndroidNew\\app\\src\\main\\res\\drawable-xhdpi\\place.png"
     },
     {
         "merged": "C:\\Users\\dikhong\\Documents\\GitHub\\WeValle\\AndroidNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable_graycircle.xml.flat",
@@ -1898,6 +1918,10 @@
     {
         "merged": "C:\\Users\\dikhong\\Documents\\GitHub\\WeValle\\AndroidNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_ic_mr_button_connecting_12_light.png.flat",
         "source": "C:\\Users\\dikhong\\.gradle\\caches\\transforms-1\\files-1.1\\mediarouter-v7-25.2.0.aar\\9225ce11f46bd4e14bb2bb77acfe4037\\res\\drawable-xhdpi-v4\\ic_mr_button_connecting_12_light.png"
+    },
+    {
+        "merged": "C:\\Users\\dikhong\\Documents\\GitHub\\WeValle\\AndroidNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_add_black_24dp.xml.flat",
+        "source": "C:\\Users\\dikhong\\Documents\\GitHub\\WeValle\\AndroidNew\\app\\src\\main\\res\\drawable\\ic_add_black_24dp.xml"
     },
     {
         "merged": "C:\\Users\\dikhong\\Documents\\GitHub\\WeValle\\AndroidNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_list_selector_holo_dark.xml.flat",
@@ -2836,12 +2860,12 @@
         "source": "C:\\Users\\dikhong\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.3.1.aar\\3435f4f9569a70d2629e6702044ddd40\\res\\drawable-mdpi-v4\\abc_scrubber_track_mtrl_alpha.9.png"
     },
     {
-        "merged": "C:\\Users\\dikhong\\Documents\\GitHub\\WeValle\\AndroidNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_quantum_ic_refresh_white_24.png.flat",
-        "source": "C:\\Users\\dikhong\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-cast-framework-11.8.0.aar\\8f6be89d1bb2ab21030547d17350c8ce\\res\\drawable-xhdpi-v4\\quantum_ic_refresh_white_24.png"
-    },
-    {
         "merged": "C:\\Users\\dikhong\\Documents\\GitHub\\WeValle\\AndroidNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_quantum_ic_skip_next_white_36.png.flat",
         "source": "C:\\Users\\dikhong\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-cast-framework-11.8.0.aar\\8f6be89d1bb2ab21030547d17350c8ce\\res\\drawable-hdpi-v4\\quantum_ic_skip_next_white_36.png"
+    },
+    {
+        "merged": "C:\\Users\\dikhong\\Documents\\GitHub\\WeValle\\AndroidNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_quantum_ic_refresh_white_24.png.flat",
+        "source": "C:\\Users\\dikhong\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-cast-framework-11.8.0.aar\\8f6be89d1bb2ab21030547d17350c8ce\\res\\drawable-xhdpi-v4\\quantum_ic_refresh_white_24.png"
     },
     {
         "merged": "C:\\Users\\dikhong\\Documents\\GitHub\\WeValle\\AndroidNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_text_select_handle_right_mtrl_dark.png.flat",
@@ -3602,6 +3626,10 @@
     {
         "merged": "C:\\Users\\dikhong\\Documents\\GitHub\\WeValle\\AndroidNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_ic_mr_button_connecting_19_light.png.flat",
         "source": "C:\\Users\\dikhong\\.gradle\\caches\\transforms-1\\files-1.1\\mediarouter-v7-25.2.0.aar\\9225ce11f46bd4e14bb2bb77acfe4037\\res\\drawable-xxhdpi-v4\\ic_mr_button_connecting_19_light.png"
+    },
+    {
+        "merged": "C:\\Users\\dikhong\\Documents\\GitHub\\WeValle\\AndroidNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_place.png.flat",
+        "source": "C:\\Users\\dikhong\\Documents\\GitHub\\WeValle\\AndroidNew\\app\\src\\main\\res\\drawable-hdpi\\place.png"
     },
     {
         "merged": "C:\\Users\\dikhong\\Documents\\GitHub\\WeValle\\AndroidNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21_ic_visa.xml.flat",
@@ -4700,6 +4728,10 @@
         "source": "C:\\Users\\dikhong\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-cast-framework-11.8.0.aar\\8f6be89d1bb2ab21030547d17350c8ce\\res\\drawable-hdpi-v4\\quantum_ic_skip_next_white_24.png"
     },
     {
+        "merged": "C:\\Users\\dikhong\\Documents\\GitHub\\WeValle\\AndroidNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable_rounded_corner.xml.flat",
+        "source": "C:\\Users\\dikhong\\Documents\\GitHub\\WeValle\\AndroidNew\\app\\src\\main\\res\\drawable\\rounded_corner.xml"
+    },
+    {
         "merged": "C:\\Users\\dikhong\\Documents\\GitHub\\WeValle\\AndroidNew\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_profile.xml.flat",
         "source": "C:\\Users\\dikhong\\Documents\\GitHub\\WeValle\\AndroidNew\\app\\src\\main\\res\\layout\\fragment_profile.xml"
     },
@@ -5446,6 +5478,10 @@
     {
         "merged": "C:\\Users\\dikhong\\Documents\\GitHub\\WeValle\\AndroidNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_list_selector_disabled_holo_light.9.png.flat",
         "source": "C:\\Users\\dikhong\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.3.1.aar\\3435f4f9569a70d2629e6702044ddd40\\res\\drawable-xxhdpi-v4\\abc_list_selector_disabled_holo_light.9.png"
+    },
+    {
+        "merged": "C:\\Users\\dikhong\\Documents\\GitHub\\WeValle\\AndroidNew\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_places.xml.flat",
+        "source": "C:\\Users\\dikhong\\Documents\\GitHub\\WeValle\\AndroidNew\\app\\src\\main\\res\\layout\\fragment_places.xml"
     },
     {
         "merged": "C:\\Users\\dikhong\\Documents\\GitHub\\WeValle\\AndroidNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_ic_group_expand_05.png.flat",

@@ -66,7 +66,7 @@ import java.util.Stack;
 /**
  * Created by Sumit on 28/08/2015.
  */
-public class HomeFragmentNewActivity extends LocationManagerFragmentActivity implements FeaturedFragment.OnFragmentInteractionListener, PlaceSelectionListener ,PlaceTabFragment.OnFragmentInteractionListener,TabFragment.OnFragmentInteractionListener{
+public class HomeFragmentNewActivity extends LocationManagerFragmentActivity implements FeaturedFragment.OnFragmentInteractionListener, PlaceSelectionListener ,PlaceTabFragment.OnFragmentInteractionListener,TabFragment.OnFragmentInteractionListener,PlacesFragment.OnFragmentInteractionListener{
 
 
     private static String TAG = HomeFragmentNewActivity.class.getSimpleName();
@@ -298,7 +298,7 @@ public class HomeFragmentNewActivity extends LocationManagerFragmentActivity imp
 //                            JSONObject jsonObject = jsonArray.getJSONObject(i);
                             Log.d("RESPONSE", jsonArray.get(i).toString());
                             if (jsonArray.get(i).equals("Feed")) {
-                                viewPagerAdapter.addFragment(TabFragment.newInstance(jsonArray.get(i).toString()), jsonArray.get(i).toString());
+                                viewPagerAdapter.addFragment(new TabFragment(), jsonArray.get(i).toString());
                             }
                             else if (jsonArray.get(i).equals("People"))
                             {
@@ -310,7 +310,7 @@ public class HomeFragmentNewActivity extends LocationManagerFragmentActivity imp
                             }
                             else if (jsonArray.get(i).equals("Places"))
                             {
-                                viewPagerAdapter.addFragment(new PlaceTabFragment(), "Places");
+                                viewPagerAdapter.addFragment(new PlacesFragment(), jsonArray.get(i).toString());
                             }
                             else
                             {
